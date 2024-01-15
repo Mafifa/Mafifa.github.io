@@ -1,0 +1,35 @@
+---
+import ExperienceItems from "./ExperienceItems.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Febrero 2022",
+    title: "Aplicacion IU code in tailwind",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit aenean non erat, inceptos montes justo laoreet ligula habitasse enim tempus cum, convallis nulla interdum ut quisque dis congue varius viverra. Condimentum nisi sollicitudin leo nisl rutrum neque dictumst, fringilla torquent fermentum porta tempus nostra donec, eleifend dapibus porttitor lacinia montes sagittis. Leo rhoncus phasellus penatibus convallis purus cubilia laoreet ac cras, porttitor tempor proin diam vivamus placerat nunc quam, duis posuere lacus sagittis ut aliquet sociosqu pharetra.",
+    link: "#",
+  },
+  {
+    date: "Enero 2023",
+    title: "Desarrolo web",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit aenean non erat, inceptos montes justo laoreet ligula habitasse enim tempus cum, convallis nulla interdum ut quisque dis congue varius viverra. Condimentum nisi sollicitudin leo nisl rutrum neque dictumst, fringilla torquent fermentum porta tempus nostra donec, eleifend dapibus porttitor lacinia montes sagittis. Leo rhoncus phasellus penatibus convallis purus cubilia laoreet ac cras, porttitor tempor proin diam vivamus placerat nunc quam, duis posuere lacus sagittis ut aliquet sociosqu pharetra.",
+  },
+  {
+    date: "Enero 2024",
+    title: "Desarrollo web",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit aenean non erat, inceptos montes justo laoreet ligula habitasse enim tempus cum, convallis nulla interdum ut quisque dis congue varius viverra. Condimentum nisi sollicitudin leo nisl rutrum neque dictumst, fringilla torquent fermentum porta tempus nostra donec, eleifend dapibus porttitor lacinia montes sagittis. Leo rhoncus phasellus penatibus convallis purus cubilia laoreet ac cras, porttitor tempor proin diam vivamus placerat nunc quam, duis posuere lacus sagittis ut aliquet sociosqu pharetra.",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-4">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItems {...experience} />
+      </li>
+    ))
+  }
+</ol>

@@ -1,0 +1,56 @@
+---
+import NextJS from "./icons/NextJs.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import React from "./icons/ReactIco.astro";
+import Node from "./icons/NodeIco.astro";
+import Astro from "./icons/AstroIco.astro";
+import JS from "./icons/JSIco.astro";
+import TS from "./icons/TSIco.astro";
+import HTML from "./icons/HTMLIco.astro";
+
+const TAGS = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: React,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-white, text-[#73bcf6]",
+    icon: Tailwind,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "Prject 1",
+    description: "LOREM IPTUMS ASDADASDASDASDASKLDMASKLDMASKMDLASM",
+    link: "#",
+    github: "#",
+    image: "public/Projects/Project.jpg",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, tags, image }) => (
+    <article>
+      <h3 class="text-2xl font-semibold mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul>
+        {tags.map((tag) => (
+          <li>
+            <tag.icon />
+            {tag.name}
+          </li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-white/10 shadow-2xl"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
+},
