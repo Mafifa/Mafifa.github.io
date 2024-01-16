@@ -1,6 +1,6 @@
 # Mafifa - Desarrollador Web Fullstack
 
-![Portafolio](public\Projects\LookRepository.png)
+![Portafolio](./Projects/LookRepository.png)
 
 ## ¡Hola, Mundo! 👋
 
