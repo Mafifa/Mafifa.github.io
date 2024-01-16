@@ -1,9 +1,10 @@
 import { defineConfig } from "astro/config";
-
 import tailwind from "@astrojs/tailwind";
+
+const LIVE_URL = "http://mafifa.github.io/";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://Mafifa.github.io",
+  site: LIVE_URL,
   integrations: [tailwind()],
 });
