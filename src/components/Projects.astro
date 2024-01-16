@@ -37,7 +37,7 @@ const PROJECTS = [
   PROJECTS.map(({ title, description, tags, image }) => (
     <article>
       <h3 class="text-2xl font-semibold mb-2">{title}</h3>
-      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <p class="mb-4 text-base font-normal text-gray-200 text-pretty">{description}</p>
       <ul class="flex gap-x-4 flex-row mb-2">
         {tags.map((tag) => (
           <li>
