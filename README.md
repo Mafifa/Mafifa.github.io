@@ -17,7 +17,7 @@ Soy Mafifa, desarrollador web con un enfoque claro en la creación de experienci
 - C++
 - SQL
 
-## 📬 _¡Hablame por correo!_
+## 📬 _¡Hablame!_
 
  Contactame [por correo](mailto:mafifacu@gmail.com).
 
