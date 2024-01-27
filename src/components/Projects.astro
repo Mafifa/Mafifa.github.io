@@ -10,7 +10,7 @@ import HTML from "./icons/HTMLIco.astro";
 
 const TAGS = {
   NEXT: {
-    name: "Next.js",
+    name: "React.js",
     class: "bg-black text-white",
     icon: React,
   },
@@ -23,11 +23,12 @@ const TAGS = {
 
 const PROJECTS = [
   {
-    title: "Prject 1",
-    description: "LOREM IPTUMS ASDADASDASDASDASKLDMASKLDMASKMDLASM",
+    title: "Proyectos: None",
+    description:
+      "De momento no tengo ningun proyecto finalizado que valga la pena publicar aqui, estoy trabajando en un cronometro multi funcional work out ",
     link: "#",
     github: "#",
-    image: "./public/Projects/Project.jpg",
+    image: "./Projects/Project.jpg",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
 ];
@@ -37,7 +38,9 @@ const PROJECTS = [
   PROJECTS.map(({ title, description, tags, image }) => (
     <article>
       <h3 class="text-2xl font-semibold mb-2">{title}</h3>
-      <p class="mb-4 text-base font-normal text-gray-200 text-pretty">{description}</p>
+      <p class="mb-4 text-base font-normal text-gray-200 text-pretty">
+        {description}
+      </p>
       <ul class="flex gap-x-4 flex-row mb-2">
         {tags.map((tag) => (
           <li>
@@ -57,4 +60,4 @@ const PROJECTS = [
       />
     </article>
   ))
-},
+}
