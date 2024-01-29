@@ -4,7 +4,7 @@
 
 ## ¡Hola, Mundo! 👋
 
-Soy Mafifa, un apasionado desarrollador web con un enfoque claro en la creación de experiencias digitales excepcionales. Mi código es mi lienzo y la web es mi escenario, donde transformo ideas en soluciones impactantes.
+Soy Mafifa, desarrollador web con un enfoque claro en la creación de experiencias digitales excepcionales. Mi código es mi lienzo y la web es mi escenario, donde transformo ideas en soluciones impactantes.
 
 ## 🛠️ Tecnologías y Herramientas
 
@@ -17,8 +17,8 @@ Soy Mafifa, un apasionado desarrollador web con un enfoque claro en la creación
 - C++
 - SQL
 
-## 📬 _¡Conéctate!_
+## 📬 _¡Hablame!_
 
-¡Hablemos sobre proyectos emocionantes! Contacta conmigo [por correo](mailto:mafifacu@gmail.com).
+ Contactame [por correo](mailto:mafifacu@gmail.com).
 
-_¡Codea duro, sueña en grande!_ 🚀
+_Creciendo cada dia como programador web_ 🚀
