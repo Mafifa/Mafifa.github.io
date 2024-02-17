@@ -2,14 +2,11 @@
 import NextJS from "./icons/NextJs.astro";
 import Tailwind from "./icons/Tailwind.astro";
 import React from "./icons/ReactIco.astro";
-import Node from "./icons/NodeIco.astro";
 import Astro from "./icons/AstroIco.astro";
 import JS from "./icons/JSIco.astro";
-import TS from "./icons/TSIco.astro";
-import HTML from "./icons/HTMLIco.astro";
 
 const TAGS = {
-  NEXT: {
+  REACT: {
     name: "React.js",
     class: "bg-black text-white",
     icon: React,
@@ -19,17 +16,27 @@ const TAGS = {
     class: "bg-white, text-[#73bcf6]",
     icon: Tailwind,
   },
+  JS: {
+    name: "JavaScript",
+    class: "bg-white, text-[#73bcf6]",
+    icon: JS,
+  },
+  ASTRO: {
+    name: "ASTRO",
+    class: "bg-white, text-[#000]",
+    icon: Astro,
+  },
 };
 
 const PROJECTS = [
   {
     title: "Proyectos: None",
     description:
-      "De momento no tengo ningun proyecto finalizado que destaque para ser publicado aqui, estoy trabajando en un cronometro multi funcional work out, y en una pagina para mostrar la paleta de colores de un sitio web usando la relga del 60 30 10.",
+      "Actualmente, no cuento con proyectos finalizados que destaquen lo suficiente como para ser publicados aquí. Estoy dedicado al desarrollo de un cronómetro multifuncional para entrenamientos y a la creación de una página destinada a mostrar la paleta de colores de un sitio web utilizando la regla del 60-30-10.",
     link: "#",
     github: "#",
     image: "./Projects/Project.jpg",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.JS],
   },
 ];
 ---
