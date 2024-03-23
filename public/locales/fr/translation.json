@@ -1,0 +1,34 @@
+{
+  "header": {
+    "start": "Démarrage",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "about": "A propos de moi"
+  },
+  "site": {
+    "title": "Portfolio de Mafifa - Développeur et Programmeur web",
+    "description": "Mafifa est un développeur web junior et un étudiant en ingénierie des systèmes.",
+    "im": "Hé, je suis Mafifa",
+    "work": "Disponible pour travailler",
+    "about": "Étudiant en ingénierie des systèmes et développeur web Fullstack junior. Spécialisé dans les bases TypeScript, React, Astro et NextJS. Avec une expérience dans la conduite de projet et l'optimisation des expériences digitales.",
+    "workE": "Expérience professionnelle",
+    "projects": "Projets",
+    "aboutMe": "A propos de moi"
+  },
+  "experience": {
+    "title": "Gestionnaire - Superviseur du système de facturation générale",
+    "description": "Au cours de l'été 2023, j'ai assumé le rôle de gestionnaire et de leader dans une petite entreprise de vente au détail d'appareils électroménagers. Mes responsabilités consistaient à superviser les opérations quotidiennes et à diriger l'équipe. En plus des tâches de gestion, j'ai activement contribué à la maintenance du système de facturation. Ce système, construit sur une base de données SQL et programmé en C++, était un élément crucial de l'entreprise.",
+    "date": "Juin 2023/ Octobre 2023"
+  },
+  "projects": {
+    "description": "Maffi-type est une application construite en ReactJS et TypeScript qui utilise Tailwind CSS pour minimiser la consommation de ressources. ReactJS se charge de créer une interface utilisateur dynamique, TypeScript assure l'intégrité du code avec des types statiques, tandis que Tailwind CSS fournit des styles prédéfinis qui sont appliqués directement aux éléments HTML, réduisant ainsi la nécessité d'écrire des CSS personnalisés. Cette combinaison de technologies permet une expérience utilisateur efficace et bien stylisée dans Maffi-type.",
+    "repository": "Référentiel"
+  },
+  "about": {
+    "p1": "Je m'appelle Carlos, mais les gens m'appellent Mafifa (c'est mon nom de famille) depuis toujours. J'adore les jeux vidéo et à l'âge de 12 ans, je me suis lancé dans la programmation, en jouant avec C++ et le CMD de Windows.",
+    "p2": "Au lycée, JavaScript m'a captivé et plus tard est venu mon amour éternel, TypeScript. Aujourd'hui, je suis un programmeur web junior qui se concentre sur React, Astro et Next.js."
+  },
+  "footer": {
+    "template": "Modèle basé sur celui de"
+  }
+}

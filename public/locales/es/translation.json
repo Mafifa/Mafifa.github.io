@@ -1,0 +1,34 @@
+{
+  "header": {
+    "start": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "about": "Sobre mi"
+  },
+  "site": {
+    "title": "Mafifa portafolio - Desarrolador y Programador Web",
+    "description": "Mafifa es un Desarrollador Web junior y un estudiante de Ingieneria en Sistemas",
+    "im": "Hey, Soy Mafifa",
+    "work": "Disponible",
+    "about": "Estudiante de Ingeniería de Sistemas y desarrollador web Junior Fullstack. Especializado en bases TypeScript, React, Astro y NextJS. Con experiencia en liderazgo de proyectos y optimización de experiencias digitales.",
+    "workE": "Experiencia laboral",
+    "projects": "Proyectos",
+    "aboutMe": "Sobre mi"
+  },
+  "experience": {
+    "title": "Gerente - Supervisor del Sistema General de Facturación",
+    "description": "Durante el verano de 2023, asumí el papel de gerente y líder en un pequeño minorista de electrodomésticos. Mis responsabilidades incluían supervisar las operaciones diarias y proporcionar liderazgo al equipo. Además de las tareas de gestión, contribuí activamente al mantenimiento del sistema de facturación. Este sistema, construido sobre una base de datos SQL y programado en C++, era un componente crucial para el negocio.",
+    "date": "Junio 2023/ Octubre 2023"
+  },
+  "projects": {
+    "description": "Maffi-type es una aplicación construida en ReactJS y TypeScript que utiliza Tailwind CSS para minimizar el consumo de recursos. ReactJS se encarga de crear una interfaz de usuario dinámica, TypeScript garantiza la integridad del código con tipos estáticos, mientras que Tailwind CSS proporciona estilos predefinidos que se aplican directamente a los elementos HTML, lo que reduce la necesidad de escribir CSS personalizado. Esta combinación de tecnologías permite una experiencia de usuario eficiente y con buen estilo en Maffi-type.",
+    "repository": "Repositorio"
+  },
+  "about": {
+    "p1": "Soy Carlos, pero la gente me llama Mafifa (es mi apellido) desde que tengo uso de razón. Me encantan los videojuegos y a los 12 años me aventuré en la programación, jugando con C++ y el CMD de Windows.",
+    "p2": "En el instituto, JavaScript me cautivó y más tarde llegó mi amor eterno, TypeScript. Hoy, soy un programador web junior centrado en React, Astro y Next.js."
+  },
+  "footer": {
+    "template": "Template basado en el de "
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "header": {
+    "start": "Start",
+    "experience": "Experience",
+    "projects": "Projects",
+    "about": "About me"
+  },
+  "site": {
+    "title": "Mafifa's portfolio - Developer and Web programmer",
+    "description": "Mafifa is a Junior web developer and a System Engineer student",
+    "im": "Hey, I'm Mafifa",
+    "work": "Available to work",
+    "about": "Systems Engineering student and Junior Fullstack web developer. Specialized in TypeScript, React, Astro and NextJS bases. With experience in project leadership and optimization of digital experiences.",
+    "workE": "Work experience",
+    "projects": "Projects",
+    "aboutMe": "About me"
+  },
+  "experience": {
+    "title": "Manager - General Billing System Supervisor",
+    "description": "During the summer of 2023, I assumed the role of manager and leader at a small appliance retailer. My responsibilities included overseeing daily operations and providing leadership to the team. In addition to managerial duties, I actively contributed to the maintenance of the billing system. This system, built on a SQL database foundation and programmed in C++, was a crucial component to the business.",
+    "date": "June 2023/ October 2023"
+  },
+  "projects": {
+    "description": "Maffi-type is an application built in ReactJS and TypeScript that uses Tailwind CSS to minimize resource consumption. ReactJS takes care of creating a dynamic user interface, TypeScript ensures code integrity with static types, while Tailwind CSS provides predefined styles that are applied directly to HTML elements, reducing the need to write custom CSS. This combination of technologies enables an efficient and well-styled user experience in Maffi-type.",
+    "repository": "Repository"
+  },
+  "about": {
+    "p1": "I'm Carlos, but the people call me Mafifa (it's my last name) since I can remember. I love videogames and at the age of 12, I ventured into programming, playing with C++ and the Windows CMD.",
+    "p2": "In high school, JavaScript captivated me and later came my eternal love, TypeScript. Today, I'm a junior web programmer focused on React, Astro and Next.js."
+  },
+  "footer": {
+    "template": "Template based on that of"
+  }
+}
