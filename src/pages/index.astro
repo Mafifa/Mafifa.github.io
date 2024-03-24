@@ -15,10 +15,13 @@ import Projects from "../components/Projects.astro";
 import PDFIco from "../components/icons/PDFIco.astro";
 import AboutMe from "../components/AboutMe.astro";
 import AboutMeIco from "../components/icons/AboutMeIco.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout
-  title="Porfolio de Mafifa - Desarrolador y Programador Web"
+  title={t("site.title")}
   description="Contrata a Mafifa para crear tu aplicacion web o movil. Desarrolador web Junior y estudiante de Ingieneria de Sistemas"
 >
   <main>
@@ -33,10 +36,10 @@ import AboutMeIco from "../components/icons/AboutMeIco.astro";
         <h1
           class="text-white lg:pb-6 text-wrap md:text-4xl text-3xl lg:text-5xl flex font-bold flex-row gap-x-4 pb-10 items-center"
         >
-          Hey, soy Mafifa
+          {t("site.im")}
           <Badge class="items-center self-center justify-center">
             <a href="mailto:mafifacu@gmail.com" target="_blank" rel="nooperner"
-              >Disponible Para trabajar
+              >{t("site.work")}
             </a>
           </Badge>
         </h1>
@@ -45,10 +48,7 @@ import AboutMeIco from "../components/icons/AboutMeIco.astro";
       <h2
         class="text-wrap text-xl lg:text-2xl opacity-80 flex justify-center items-center"
       >
-        Estudiante de Ingeniería de Sistemas y Desarrollador web Fullstack
-        Junior. Especializado en TypeScript, React, Astro y bases en NextJS. Con
-        experiencia en liderazgo de proyectos y optimización de experiencias
-        digitales.
+        {t("site.about")}
       </h2>
       <nav class="flex gap-4 mt-4 flex-wrap">
         <SocialPill href="https://github.com/Mafifa">
@@ -82,7 +82,7 @@ import AboutMeIco from "../components/icons/AboutMeIco.astro";
     <Container id="Experiencia" class="lg:w-[740px] mx-auto">
       <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
         <BriefcaseIco class="size-8" />
-        Experiencia laboral
+        {t("site.workE")}
       </h2>
       <Experience />
       <slot />
@@ -91,7 +91,7 @@ import AboutMeIco from "../components/icons/AboutMeIco.astro";
     <Container id="Proyectos" class="lg:w-[740px] mx-auto">
       <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
         <ProjectsIco class="size-8" />
-        Proyectos
+        {t("site.projects")}
       </h2>
       <Projects />
     </Container>
@@ -100,7 +100,7 @@ import AboutMeIco from "../components/icons/AboutMeIco.astro";
       <Container id="Sobre-mi" class="lg:w-[740px] mx-auto mt-10">
         <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center pt-5">
           <AboutMeIco class="size-9" />
-          Sobre mi
+          {t("site.aboutMe")}
         </h2>
         <AboutMe />
       </Container>
