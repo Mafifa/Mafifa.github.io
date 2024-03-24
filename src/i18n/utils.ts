@@ -1,5 +1,4 @@
 import { ui, defaultLang, showDefaultLang } from './ui'
-export const showDefaultLang = false
 
 export function getLangFromUrl (url: URL) {
   const [, lang] = url.pathname.split('/')
