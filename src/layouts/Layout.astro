@@ -6,10 +6,11 @@ interface Props {
 import Header from "../components/Header.astro";
 import "@fontsource-variable/onest";
 const { description, title } = Astro.props;
+const { currentLocale } = Astro;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={currentLocale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -19,7 +20,7 @@ const { description, title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-<!-- <div class="w-max h-max"><img src="./Projects/cool-background.png" alt="BACKGROUD"></div> -->
+    <!-- <div class="w-max h-max"><img src="./Projects/cool-background.png" alt="BACKGROUD"></div> -->
     <Header />
     <slot />
   </body>
@@ -39,8 +40,8 @@ const { description, title } = Astro.props;
     flex-direction: column;
     background-color: #050505;
     min-height: 100vh;
-     /* background-image: url("./Projects/cool-background.png"); */
-     background: #1c1d22;
+    /* background-image: url("./Projects/cool-background.png"); */
+    background: #1c1d22;
   }
   @media (prefers-reduced-motion: reduce) {
     html {
