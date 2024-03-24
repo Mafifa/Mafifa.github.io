@@ -6,6 +6,9 @@ import TS from "./icons/TSIco.astro";
 import SocialPill from "./SocialPill.astro";
 import GitHubIco from "./icons/GitHubIco.astro";
 import LinkIco from "./icons/LinkIco.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const TAGS = {
   REACT: {
@@ -33,8 +36,7 @@ const TAGS = {
 const PROJECTS = [
   {
     title: "MAFFI TYPE",
-    description:
-      "Maffi-type es una aplicación construida en ReactJS y TypeScript que utiliza Tailwind CSS para minimizar el consumo de recursos. ReactJS se encarga de crear una interfaz de usuario dinámica, TypeScript garantiza la integridad del código con tipos estáticos, mientras que Tailwind CSS proporciona estilos predefinidos que se aplican directamente a los elementos HTML, reduciendo la necesidad de escribir CSS personalizado. Esta combinación de tecnologías permite una experiencia de usuario eficiente y bien estilizada en Maffi-type.",
+    description: t("projects.description"),
     link: "https://maffi-type.vercel.app",
     github: "https://github.com/Mafifa/maffi-type",
     image: "./Projects/MAFFI-TYPE.png",

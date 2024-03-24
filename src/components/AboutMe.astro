@@ -1,16 +1,17 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section class="lg:w-[740px] flex items-center mx-auto pb-4">
   <div class="">
     <p class="text-base font-medium text-wrap">
-      Soy Carlos, pero me llaman Mafifa (es mi apellido) desde que tengo
-      memoria. Amo los videojuegos y a los 12, me aventuré en la programación,
-      trasteando con C++ y la CMD de Windows.
+      {t("about.p1")}
     </p>
     <br />
     <p class="mb-4 text-base font-medium">
-      En el bachillerato, JavaScript me cautivó y más tarde llegó mi amor
-      eterno, TypeScript. Hoy, soy estudiante universitario de <strong
-        >Ingieneria en Sistemas</strong
-      > un programador web junior enfocado en React, Astro y Next.js.
+      {t("about.p2")}
     </p>
   </div>
   <img
