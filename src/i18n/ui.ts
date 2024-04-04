@@ -29,7 +29,8 @@ export const ui = {
     'projects.repository': 'Repository',
     'about.p1': "I'm Carlos, but the people call me Mafifa (it's my last name) since I can remember. I love videogames and at the age of 12, I ventured into programming, playing with C++ and the Windows CMD.",
     'about.p2': "In high school, JavaScript captivated me and later came my eternal love, TypeScript. Today, I'm a junior web programmer focused on React, Astro and Next.js.",
-    'footer.template': 'Template based on that of'
+    'footer.template': 'Template based on that of',
+    'projects.description1': 'Fer-Books is a website that displays books in Spanish and uses ViewTransition for smooth transition effects. Developed with Astro and Tailwind, it stands out for its focus on the Spanish-speaking market and elegant design, although it could improve in content variety, SEO optimization, responsive design, interactive features, and accessibility to offer a more comprehensive and appealing experience to users.'
   },
   fr: {
     'header.start': 'Démarrage',
@@ -51,7 +52,8 @@ export const ui = {
     'projects.repository': 'Référentiel',
     'about.p1': "Je m'appelle Carlos, mais les gens m'appellent Mafifa (c'est mon nom de famille) depuis toujours. J'adore les jeux vidéo et à l'âge de 12 ans, je me suis lancé dans la programmation, en jouant avec C++ et le CMD de Windows.",
     'about.p2': "Au lycée, JavaScript m'a captivé et plus tard est venu mon amour éternel, TypeScript. Aujourd'hui, je suis un programmeur web junior qui se concentre sur React, Astro et Next.js.",
-    'footer.template': 'Modèle basé sur celui de'
+    'footer.template': 'Modèle basé sur celui de',
+    'projects.description1': "Fer-Books est un site web qui affiche des livres en espagnol et utilise ViewTransition pour des effets de transition en douceur. Développé avec Astro et Tailwind, il se distingue par son focus sur le marché hispanophone et son design élégant, bien qu'il puisse s'améliorer en termes de variété de contenu, d'optimisation SEO, de design responsive, de fonctionnalités interactives et d'accessibilité pour offrir une expérience plus complète et attrayante aux utilisateurs."
 
   },
   es: {
@@ -74,6 +76,7 @@ export const ui = {
     'projects.repository': 'Repositorio',
     'about.p1': 'Soy Carlos, pero la gente me llama Mafifa (es mi apellido) desde que tengo uso de razón. Me encantan los videojuegos y a los 12 años me aventuré en la programación, jugando con C++ y el CMD de Windows.',
     'about.p2': 'En el instituto, JavaScript me cautivó y más tarde llegó mi amor eterno, TypeScript. Hoy, soy un programador web junior centrado en React, Astro y Next.js.',
-    'footer.template': 'Template basado en el de '
+    'footer.template': 'Template basado en el de ',
+    'projects.description1': 'Fer-Books es un sitio web que muestra libros en español y utiliza ViewTransition para una transición suave. Desarrollado con Astro y Tailwind, destaca por su enfoque en el mercado hispanohablante y su diseño elegante, aunque podría mejorar en la variedad de contenido, optimización SEO, diseño receptivo, funciones interactivas y accesibilidad para ofrecer una experiencia más completa y atractiva a los usuarios.'
   }
 } as const
