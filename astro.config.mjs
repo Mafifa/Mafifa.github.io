@@ -5,6 +5,7 @@ const LIVE_URL = 'http://mafifa.github.io/'
 
 // https://astro.build/config
 export default defineConfig({
+  source: '/src',
   site: LIVE_URL,
   integrations: [tailwind()],
   i18n: {
