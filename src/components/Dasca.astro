@@ -1,0 +1,18 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+import { Image } from "astro:assets";
+import dascaMain from "public/Projects/dasca-principal.png";
+import LinkIco from "./icons/LinkIco.astro";
+import SocialPill from "./SocialPill.astro";
+---
+
+<article class="grid grid-cols-1 gap-y-2 mb-6">
+  <p>{t("site.StartUpDescription")}</p>
+  <Image src={dascaMain} alt={`DASCA main`} class="rounded-md" />
+  <SocialPill href={`https://www.dasca.vercel.app`}>
+    <LinkIco class="size-5 md:size-6" />
+    Web site
+  </SocialPill>
+</article>

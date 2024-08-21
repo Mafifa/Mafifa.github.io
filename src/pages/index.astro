@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import StartUp from "@/components/icons/StartUp.astro";
 import Badge from "../components/Badge.astro";
 import GitHubIco from "../components/icons/GitHubIco.astro";
 import SocialPill from "../components/SocialPill.astro";
@@ -16,13 +16,15 @@ import PDFIco from "../components/icons/PDFIco.astro";
 import AboutMe from "../components/AboutMe.astro";
 import AboutMeIco from "../components/icons/AboutMeIco.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import Dasca from "@/components/Dasca.astro";
+import DascaLogo from "@/components/icons/dascaLogo.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <Layout
   title={t("site.title")}
-  description="Contrata a Mafifa para crear tu aplicacion web o movil. Desarrolador web y estudiante de Ingieneria de Sistemas"
+  description="Contrata a Mafifa para crear tu aplicacion web o movil. Desarrolador web Ingeniero de Sistemas y fundador de DASCA"
 >
   <main>
     <Container class="lg:w-[740px] py-44 mx-auto pb-24">
@@ -86,6 +88,14 @@ const t = useTranslations(lang);
       </h2>
       <Experience />
       <slot />
+    </Container>
+
+    <Container id="Negocio" class="lg:w-[740px] mx-auto">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <DascaLogo />
+        {t("site.StartUp")}
+      </h2>
+      <Dasca />
     </Container>
 
     <Container id="Proyectos" class="lg:w-[740px] mx-auto">
