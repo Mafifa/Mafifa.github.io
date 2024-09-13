@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Dialog } from "@headlessui/react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import { useTranslations } from "@/i18n/utils";
+import { useTranslations } from "../i18n/utils";
 
 interface Project {
   id: number;
