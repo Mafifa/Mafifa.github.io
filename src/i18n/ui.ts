@@ -120,7 +120,7 @@ export const ui = {
     'site.description': 'Mafifa es un Desarrollador Web y un estudiante de Ingieneria en Sistemas',
     'site.im': 'Hey, Soy Mafifa',
     'site.work': 'Disponible',
-    'site.about': 'Estudiante de Ingeniería de Sistemas y desarrollador web Junior Fullstack. Especializado en bases TypeScript, React, Astro y NextJS. Con experiencia en liderazgo de proyectos y optimización de experiencias digitales.',
+    'site.about': 'Estudiante de Ingeniería de Sistemas y desarrollador web Fullstack. Especializado en TypeScript, React, Astro, NextJS y Express. Con experiencia en liderazgo de proyectos y optimización de experiencias digitales.',
     'site.workE': 'Experiencia laboral',
     'site.StartUp': 'Innovación en Desarrollo de Software',
     'site.StartUpDescription': 'En DASCA, transformamos ideas en soluciones digitales efectivas. Especializados en el diseño y desarrollo de páginas web, así como en servicios de mantenimiento, abordamos proyectos con un enfoque flexible, adaptándonos a cualquier nivel de complejidad. Nuestra misión es ofrecer productos con diseños innovadores y un rendimiento óptimo, garantizando que cada cliente reciba una solución a medida que impulsa su éxito digital.',
