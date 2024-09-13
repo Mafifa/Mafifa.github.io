@@ -1,24 +1,20 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import StartUp from "@/components/icons/StartUp.astro";
-import Badge from "../components/Badge.astro";
-import GitHubIco from "../components/icons/GitHubIco.astro";
-import SocialPill from "../components/SocialPill.astro";
-import XIco from "../components/icons/XIco.astro";
-import EmailIco from "../components/icons/EmailIco.astro";
-import Experience from "../components/Experience.astro";
-import Container from "../components/Container.astro";
-import BriefcaseIco from "../components/icons/BriefcaseIco.astro";
-import ProjectsIco from "../components/icons/ProjectsIco.astro";
-import Footer from "../components/Footer.astro";
-import Projects from "../components/Projects.astro";
-import PDFIco from "../components/icons/PDFIco.astro";
-import AboutMe from "../components/AboutMe.astro";
-import AboutMeIco from "../components/icons/AboutMeIco.astro";
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
-import Dasca from "@/components/Dasca.astro";
-import DascaLogo from "@/components/icons/dascaLogo.astro";
-import ProjectsSection from "public/ProyectosSection";
+import Layout from "../../layouts/Layout.astro";
+import Badge from "../../components/Badge.astro";
+import GitHubIco from "../../components/icons/GitHubIco.astro";
+import SocialPill from "../../components/SocialPill.astro";
+import XIco from "../../components/icons/XIco.astro";
+import EmailIco from "../../components/icons/EmailIco.astro";
+import Experience from "../../components/Experience.astro";
+import Container from "../../components/Container.astro";
+import BriefcaseIco from "../../components/icons/BriefcaseIco.astro";
+import Footer from "../../components/Footer.astro";
+import PDFIco from "../../components/icons/PDFIco.astro";
+import AboutMe from "../../components/AboutMe.astro";
+import AboutMeIco from "../../components/icons/AboutMeIco.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import ProjectsSection from "@/components/ProjectsSection";
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---

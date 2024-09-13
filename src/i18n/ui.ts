@@ -4,7 +4,7 @@ export const languages = {
   es: 'Español'
 
 }
-export const showDefaultLang = false
+export const showDefaultLang = true
 
 export const defaultLang = 'en'
 
