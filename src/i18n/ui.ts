@@ -10,6 +10,9 @@ export const defaultLang = 'en'
 
 export const ui = {
   en: {
+    'sortT':'Sort by Title',
+    'sort':'Sort by Date',
+    'Technologies':'All Technologies',
     'header.start': 'Start',
     'header.experience': 'Experience',
     'header.projects': 'Projects',
@@ -56,6 +59,9 @@ export const ui = {
 
   },
   fr: {
+    'sortT':'Trier par Titre',
+    'sort':'Trier par Date',
+    'Technologies':'Toutes les Technologies',
     'header.start': 'Démarrage',
     'header.experience': 'Expérience',
     'header.projects': 'Projets',
@@ -103,6 +109,9 @@ export const ui = {
 
   },
   es: {
+    'sortT':'Ordernar por Titulo',
+    'sort':'Ordenar por Fecha',
+    'Technologies':'Todas las Tecnologías',
     'header.start': 'Inicio',
     'header.experience': 'Experiencia',
     'header.projects': 'Proyectos',

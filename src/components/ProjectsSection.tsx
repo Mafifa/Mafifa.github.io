@@ -29,7 +29,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       image: "../MAFFI-TYPE.png",
       websiteUrl: "https://maffi-type.vercel.app/",
       repositoryUrl: "https://github.com/Mafifa/maffi-type",
-      date: "2023-05-15",
+      date: "2023-12-15",
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       image: "../FerBooks.png",
       websiteUrl: "https://fer-books.vercel.app/",
       repositoryUrl: "https://github.com/Mafifa/fer-books",
-      date: "2023-03-20",
+      date: "2024-1-20",
     },
     {
       id: 3,
@@ -57,7 +57,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       image: "../venezuelaso.png",
       websiteUrl: "https://bdvcredito.vercel.app", // Puedes reemplazarlo con una URL real si lo tienes.
       repositoryUrl: "https://github.com/Mafifa/web-credito-bdv",
-      date: "2024-09-01",
+      date: "2024-08-27",
     },
     {
       id: 4,
@@ -77,7 +77,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       image: "../dashboardso.png",
       websiteUrl: "https://github.com/Mafifa/gestor-web",
       repositoryUrl: "https://github.com/Mafifa/gestor-web",
-      date: "2024-09-12",
+      date: "2024-08-12",
     },
     {
       id: 5,
@@ -88,7 +88,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       image: "../pomodoroso.png",
       websiteUrl: "https://github.com/Mafifa/Maff-pomodoro",
       repositoryUrl: "https://github.com/Mafifa/Maff-pomodoro",
-      date: "2024-09-12",
+      date: "2024-03-13",
     },
 
     // Add more projects here...
@@ -190,7 +190,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
             className="bg-gray-800 text-white px-4 py-2 rounded-md"
             onChange={(e) => setFilter(e.target.value)}
           >
-            <option value="All">All Technologies</option>
+            <option value="All">{t("Technologies")}</option>
             {allTechnologies.map((tech) => (
               <option key={tech} value={tech}>
                 {tech}
@@ -201,8 +201,8 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
             className="bg-gray-800 text-white px-4 py-2 rounded-md"
             onChange={(e) => setSortBy(e.target.value as "date" | "title")}
           >
-            <option value="date">Sort by Date</option>
-            <option value="title">Sort by Title</option>
+            <option value="date">{t("sort")}</option>
+            <option value="title">{t("sortT")}</option>
           </select>
         </div>
 
