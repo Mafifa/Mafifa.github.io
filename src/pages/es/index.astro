@@ -18,6 +18,8 @@ import AboutMeIco from "../../components/icons/AboutMeIco.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Dasca from "@/components/Dasca.astro";
 import DascaLogo from "@/components/icons/dascaLogo.astro";
+import ProjectsSection from "public/ProyectosSection";
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -90,23 +92,17 @@ const t = useTranslations(lang);
       <slot />
     </Container>
 
-    <Container id="Negocio" class="lg:w-[740px] mx-auto">
+    <!-- <Container id="Negocio" class="lg:w-[740px] mx-auto">
       <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
         <DascaLogo />
         {t("site.StartUp")}
       </h2>
       <Dasca />
-    </Container>
+    </Container> -->
 
-    <Container id="Proyectos" class="lg:w-[740px] mx-auto">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-        <ProjectsIco class="size-8" />
-        {t("site.projects")}
-      </h2>
-      <Projects />
-    </Container>
+    <ProjectsSection lang={lang} client:load />
 
-    <section class="bg-[#373538]">
+    <section class="bg-gray-800">
       <Container id="Sobre-mi" class="lg:w-[740px] mx-auto mt-10">
         <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center pt-5">
           <AboutMeIco class="size-9" />

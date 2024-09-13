@@ -1,13 +1,14 @@
-import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+import react from "@astrojs/react";
+const LIVE_URL = 'http://mafifa.github.io/';
 
-const LIVE_URL = 'http://mafifa.github.io/'
 
 // https://astro.build/config
 export default defineConfig({
   source: '/src',
   site: LIVE_URL,
-  integrations: [tailwind()],
+  integrations: [tailwind(), react()],
   i18n: {
     defaultLocale: 'en',
     locales: ['es', 'en', 'fr'],
@@ -15,4 +16,4 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   }
-})
+});
