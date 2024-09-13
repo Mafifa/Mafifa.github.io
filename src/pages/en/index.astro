@@ -24,7 +24,7 @@ const t = useTranslations(lang);
   description="Hire Mafifa to create your web or mobile application.Web developer, systems engineer, and founder of DASCA."
 >
   <main>
-    <Container class="lg:w-[740px] py-44 mx-auto pb-24">
+    <Container class="lg:w-[740px] py-20 mx-auto">
       <div class="max-w- mx-auto">
         <img
           src="../PERFIL1x1.jpg"
@@ -50,28 +50,36 @@ const t = useTranslations(lang);
         {t("site.about")}
       </h2>
       <nav class="flex gap-4 mt-4 flex-wrap">
-        <SocialPill href="https://github.com/Mafifa">
+        <SocialPill
+          target="_blank"
+          rel="nooperner noreferrer"
+          href="https://github.com/Mafifa"
+        >
           <GitHubIco class="size-5 md:size-6" />
           GitHub
         </SocialPill>
-        <SocialPill href="https://twitter.com/Mafifa_Charlys">
+        <SocialPill
+          target="_blank"
+          rel="nooperner noreferrer"
+          href="https://twitter.com/Mafifa_Charlys"
+        >
           <XIco class="size-4 md:size-5" />
           Twit-x-ter
         </SocialPill>
-        <SocialPill href="mailto:mafifacu@gmail.com">
+        <SocialPill
+          target="_blank"
+          rel="nooperner noreferrer"
+          href="mailto:mafifacu@gmail.com"
+        >
           <EmailIco class="size-5 md:size-6" />
           MafifaCu@gmail.com
         </SocialPill>
 
-        <SocialPill
-          href="https://drive.google.com/uc?id=1hCT00E6mxRLfaM1cFGnCTleFRnPkLMLD&export=download"
-        >
+        <SocialPill download href="../archive/Mafifa-CV-EN.pdf">
           <PDFIco />
           CV-EN
         </SocialPill>
-        <SocialPill
-          href="https://drive.google.com/uc?id=1UaTEBDQc4aX2SZoCVe3FqbztmLs_Ons8&export=download"
-        >
+        <SocialPill download href="../archive/Mafifa-CV.pdf">
           <PDFIco />
           CV-ES
         </SocialPill>
