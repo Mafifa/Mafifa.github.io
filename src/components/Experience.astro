@@ -1,24 +1,29 @@
 ---
-import ExperienceItems from "./ExperienceItems.astro";
-import { getLangFromUrl, useTranslations } from "../i18n/utils";
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+import ExperienceItems from "./ExperienceItems.astro"
+import { getLangFromUrl, useTranslations } from "../i18n/utils"
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 
 const EXPERIENCE = [
-  {
-    date: t("experience.date"),
-    title: t("experience.title"),
-    description: t("experience.description"),
-  },
-];
+	{
+		date: t("experience.date"),
+		title: t("experience.title"),
+		description: t("experience.description"),
+	},
+	{
+		date: t("experience.date2"),
+		title: t("experience.title2"),
+		description: t("experience.description2"),
+	},
+]
 ---
 
 <ol class="relative border-s border-gray-200 ml-4">
-  {
-    EXPERIENCE.map((experience) => (
-      <li class="ms-4">
-        <ExperienceItems {...experience} />
-      </li>
-    ))
-  }
+	{
+		EXPERIENCE.map((experience) => (
+			<li class="ms-4">
+				<ExperienceItems {...experience} />
+			</li>
+		))
+	}
 </ol>

@@ -32,7 +32,13 @@ export const ui = {
 		"experience.title": "Manager - General Billing System Supervisor",
 		"experience.description":
 			"During the summer of 2023, I assumed the role of manager and leader at a small appliance retailer. My responsibilities included overseeing daily operations and providing leadership to the team. In addition to managerial duties, I actively contributed to the maintenance of the billing system. This system, built on a SQL database foundation and programmed in C++, was a crucial component to the business.",
-		"experience.date": "June 2023/ October 2023",
+		"experience.date": "June 2023 / February 2024",
+		"experience.title2":
+			"FullStack Developer and Technical Consultant - Academia EMCA",
+		"experience.description2":
+			"As a FullStack Developer and Technical Consultant for Academia EMCA in Barcelona, Venezuela, I designed and developed a comprehensive billing system using Node.js, pdfkit, Electron, and React, with a strong focus on TypeScript. From initial design to deployment, the system automated PDF invoice generation, optimized data management with Supabase and PostgreSQL, and significantly enhanced user experience with a functional interface. Key features included prorated calculations, automatic reminders, and security measures, addressing the institution's specific needs and boosting operational efficiency.",
+		"experience.date2": "March 2024 / October 2024",
+
 		"projects.description":
 			"Maffi-type is an application built in ReactJS and TypeScript that uses Tailwind CSS to minimize resource consumption. ReactJS takes care of creating a dynamic user interface, TypeScript ensures code integrity with static types, while Tailwind CSS provides predefined styles that are applied directly to HTML elements, reducing the need to write custom CSS. This combination of technologies enables an efficient and well-styled user experience in Maffi-type.",
 		"projects.repository": "Repository",
@@ -105,7 +111,12 @@ export const ui = {
 			"Gestionnaire - Superviseur du système de facturation générale",
 		"experience.description":
 			"Au cours de l'été 2023, j'ai assumé le rôle de gestionnaire et de leader dans une petite entreprise de vente au détail d'appareils électroménagers. Mes responsabilités consistaient à superviser les opérations quotidiennes et à diriger l'équipe. En plus des tâches de gestion, j'ai activement contribué à la maintenance du système de facturation. Ce système, construit sur une base de données SQL et programmé en C++, était un élément crucial de l'entreprise.",
-		"experience.date": "Juin 2023/ Octobre 2023",
+		"experience.date": "Juin 2023 / Février 2024",
+		"experience.title2":
+			"Développeur FullStack et Consultant Technique - Académie EMCA",
+		"experience.description2":
+			"En tant que Développeur FullStack et Consultant Technique pour l’Académie EMCA à Barcelone, Venezuela, j’ai conçu et développé un système de facturation complet en utilisant Node.js, pdfkit, Electron et React, avec une attention particulière à TypeScript. Du design initial au déploiement, le système a automatisé la génération de factures PDF, optimisé la gestion des données avec Supabase et PostgreSQL, et amélioré considérablement l’expérience utilisateur grâce à une interface fonctionnelle. Les fonctionnalités clés incluaient des calculs proratisés, des rappels automatiques et des mesures de sécurité, répondant aux besoins spécifiques de l’institution et augmentant l’efficacité opérationnelle.",
+		"experience.date2": "Mars 2024 / Octobre 2024",
 		"projects.description":
 			"Maffi-type est une application construite en ReactJS et TypeScript qui utilise Tailwind CSS pour minimiser la consommation de ressources. ReactJS se charge de créer une interface utilisateur dynamique, TypeScript assure l'intégrité du code avec des types statiques, tandis que Tailwind CSS fournit des styles prédéfinis qui sont appliqués directement aux éléments HTML, réduisant ainsi la nécessité d'écrire des CSS personnalisés. Cette combinaison de technologies permet une expérience utilisateur efficace et bien stylisée dans Maffi-type.",
 		"projects.repository": "Référentiel",
@@ -178,7 +189,13 @@ export const ui = {
 			"Gerente - Supervisor del Sistema General de Facturación",
 		"experience.description":
 			"Durante el verano de 2023, asumí el papel de gerente y líder en un pequeño minorista de electrodomésticos. Mis responsabilidades incluían supervisar las operaciones diarias y proporcionar liderazgo al equipo. Además de las tareas de gestión, contribuí activamente al mantenimiento del sistema de facturación. Este sistema, construido sobre una base de datos SQL y programado en C++, era un componente crucial para el negocio.",
-		"experience.date": "Junio 2023/ Octubre 2023",
+		"experience.date": "Junio 2023 / Febrero 2024",
+		"experience.title2":
+			"Desarrollador FullStack y Consultor Técnico - Academia EMCA",
+		"experience.description2":
+			"Como Desarrollador FullStack y Consultor Técnico para la Academia EMCA en Barcelona, Venezuela, diseñé y desarrollé un sistema completo de facturación utilizando Node.js, pdfkit, Electron y React, con un enfoque integral en TypeScript. Desde el diseño inicial hasta el despliegue, el sistema automatizó la generación de facturas en PDF, optimizó la gestión de datos con Supabase y PostgreSQL, y mejoró significativamente la experiencia del usuario con una interfaz funcional. Entre sus características destacadas se incluyeron cálculos prorrateados, recordatorios automáticos y medidas de seguridad, logrando cumplir con las necesidades específicas de la institución y elevando la eficiencia operativa.",
+		"experience.date2": "Marzo 2024 / Octubre 2024",
+
 		"projects.description":
 			"Maffi-type es una aplicación construida en ReactJS y TypeScript que utiliza Tailwind CSS para minimizar el consumo de recursos. ReactJS se encarga de crear una interfaz de usuario dinámica, TypeScript garantiza la integridad del código con tipos estáticos, mientras que Tailwind CSS proporciona estilos predefinidos que se aplican directamente a los elementos HTML, lo que reduce la necesidad de escribir CSS personalizado. Esta combinación de tecnologías permite una experiencia de usuario eficiente y con buen estilo en Maffi-type.",
 		"projects.repository": "Repositorio",

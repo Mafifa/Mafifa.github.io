@@ -1,101 +1,101 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import Badge from "../../components/Badge.astro";
-import GitHubIco from "../../components/icons/GitHubIco.astro";
-import SocialPill from "../../components/SocialPill.astro";
-import XIco from "../../components/icons/XIco.astro";
-import EmailIco from "../../components/icons/EmailIco.astro";
-import Experience from "../../components/Experience.astro";
-import Container from "../../components/Container.astro";
-import BriefcaseIco from "../../components/icons/BriefcaseIco.astro";
-import Footer from "../../components/Footer.astro";
-import PDFIco from "../../components/icons/PDFIco.astro";
-import AboutMe from "../../components/AboutMe.astro";
-import AboutMeIco from "../../components/icons/AboutMeIco.astro";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-import ProjectsSection from "../../components/ProjectsSection";
+import Layout from "../../layouts/Layout.astro"
+import Badge from "../../components/Badge.astro"
+import GitHubIco from "../../components/icons/GitHubIco.astro"
+import SocialPill from "../../components/SocialPill.astro"
+import XIco from "../../components/icons/XIco.astro"
+import EmailIco from "../../components/icons/EmailIco.astro"
+import Experience from "../../components/Experience.astro"
+import Container from "../../components/Container.astro"
+import BriefcaseIco from "../../components/icons/BriefcaseIco.astro"
+import Footer from "../../components/Footer.astro"
+import PDFIco from "../../components/icons/PDFIco.astro"
+import AboutMe from "../../components/AboutMe.astro"
+import AboutMeIco from "../../components/icons/AboutMeIco.astro"
+import { getLangFromUrl, useTranslations } from "../../i18n/utils"
+import ProjectsSection from "../../components/ProjectsSection"
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <Layout
-  title={t("site.title")}
-  description="Contrata a Mafifa para crear tu aplicación web o móvil.Desarrollador web, ingeniero de sistemas y fundador de DASCA."
+	title={t("site.title")}
+	description="Contrata a Mafifa para crear tu aplicación web o móvil.Desarrollador web, ingeniero de sistemas y fundador de DASCA."
 >
-  <main>
-    <Container class="lg:w-[740px] py-20 mx-auto">
-      <div class="max-w- mx-auto">
-        <img
-          src="../PERFIL1x1.jpg"
-          class="rounded-full size-20 mb-5"
-          alt="carlos foto"
-        />
+	<main>
+		<Container class="lg:w-[740px] py-20 mx-auto">
+			<div class="max-w- mx-auto">
+				<img
+					src="../resources/PERFIL1x1.jpg"
+					class="rounded-full size-20 mb-5"
+					alt="carlos foto"
+				/>
 
-        <h1
-          class="text-white lg:pb-6 text-wrap md:text-4xl text-3xl lg:text-5xl flex font-bold flex-row gap-x-4 pb-10 items-center"
-        >
-          {t("site.im")}
-          <Badge class="items-center self-center justify-center">
-            <a href="mailto:mafifacu@gmail.com" target="_blank" rel="nooperner"
-              >{t("site.work")}
-            </a>
-          </Badge>
-        </h1>
-      </div>
+				<h1
+					class="text-white lg:pb-6 text-wrap md:text-4xl text-3xl lg:text-5xl flex font-bold flex-row gap-x-4 pb-10 items-center"
+				>
+					{t("site.im")}
+					<Badge class="items-center self-center justify-center">
+						<a href="mailto:mafifacu@gmail.com" target="_blank" rel="nooperner"
+							>{t("site.work")}
+						</a>
+					</Badge>
+				</h1>
+			</div>
 
-      <h2
-        class="text-wrap text-xl lg:text-2xl opacity-80 flex justify-center items-center"
-      >
-        {t("site.about")}
-      </h2>
-      <nav class="flex gap-4 mt-4 flex-wrap">
-        <SocialPill
-          target="_blank"
-          rel="nooperner noreferrer"
-          href="https://github.com/Mafifa"
-        >
-          <GitHubIco class="size-5 md:size-6" />
-          GitHub
-        </SocialPill>
-        <SocialPill
-          target="_blank"
-          rel="nooperner noreferrer"
-          href="https://twitter.com/Mafifa_Charlys"
-        >
-          <XIco class="size-4 md:size-5" />
-          Twit-x-ter
-        </SocialPill>
-        <SocialPill
-          target="_blank"
-          rel="nooperner noreferrer"
-          href="mailto:mafifacu@gmail.com"
-        >
-          <EmailIco class="size-5 md:size-6" />
-          MafifaCu@gmail.com
-        </SocialPill>
+			<h2
+				class="text-wrap text-xl lg:text-2xl opacity-80 flex justify-center items-center"
+			>
+				{t("site.about")}
+			</h2>
+			<nav class="flex gap-4 mt-4 flex-wrap">
+				<SocialPill
+					target="_blank"
+					rel="nooperner noreferrer"
+					href="https://github.com/Mafifa"
+				>
+					<GitHubIco class="size-5 md:size-6" />
+					GitHub
+				</SocialPill>
+				<SocialPill
+					target="_blank"
+					rel="nooperner noreferrer"
+					href="https://twitter.com/Mafifa_Charlys"
+				>
+					<XIco class="size-4 md:size-5" />
+					Twit-x-ter
+				</SocialPill>
+				<SocialPill
+					target="_blank"
+					rel="nooperner noreferrer"
+					href="mailto:mafifacu@gmail.com"
+				>
+					<EmailIco class="size-5 md:size-6" />
+					MafifaCu@gmail.com
+				</SocialPill>
 
-        <SocialPill download href="../archive/Mafifa-CV-EN.pdf">
-          <PDFIco />
-          CV-EN
-        </SocialPill>
-        <SocialPill download href="../archive/Mafifa-CV.pdf">
-          <PDFIco />
-          CV-ES
-        </SocialPill>
-      </nav>
-    </Container>
+				<SocialPill download href="../archive/Mafifa-CV-EN.pdf">
+					<PDFIco />
+					CV-EN
+				</SocialPill>
+				<SocialPill download href="../archive/Mafifa-CV.pdf">
+					<PDFIco />
+					CV-ES
+				</SocialPill>
+			</nav>
+		</Container>
 
-    <Container id="Experiencia" class="lg:w-[740px] mx-auto">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-        <BriefcaseIco class="size-8" />
-        {t("site.workE")}
-      </h2>
-      <Experience />
-      <slot />
-    </Container>
+		<Container id="Experiencia" class="lg:w-[740px] mx-auto">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefcaseIco class="size-8" />
+				{t("site.workE")}
+			</h2>
+			<Experience />
+			<slot />
+		</Container>
 
-    <!-- <Container id="Negocio" class="lg:w-[740px] mx-auto">
+		<!-- <Container id="Negocio" class="lg:w-[740px] mx-auto">
       <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
         <DascaLogo />
         {t("site.StartUp")}
@@ -103,17 +103,17 @@ const t = useTranslations(lang);
       <Dasca />
     </Container> -->
 
-    <ProjectsSection lang={lang} client:load />
+		<ProjectsSection lang={lang} client:load />
 
-    <section class="bg-gray-800">
-      <Container id="Sobre-mi" class="lg:w-[740px] mx-auto mt-10">
-        <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center pt-5">
-          <AboutMeIco class="size-9" />
-          {t("site.aboutMe")}
-        </h2>
-        <AboutMe />
-      </Container>
-    </section>
-    <Footer />
-  </main>
+		<section class="bg-gray-800">
+			<Container id="Sobre-mi" class="lg:w-[740px] mx-auto mt-10">
+				<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center pt-5">
+					<AboutMeIco class="size-9" />
+					{t("site.aboutMe")}
+				</h2>
+				<AboutMe />
+			</Container>
+		</section>
+		<Footer />
+	</main>
 </Layout>

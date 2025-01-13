@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Dialog, DialogTitle } from "@headlessui/react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
@@ -94,7 +94,7 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
     },
     {
       id: 6,
-      title: "Vendible",
+      title: "VENDIBLE",
       description: t("projects.project6.description"),
       longDescription: t("projects.project6.longDescription"),
       technologies: ["Electron", "React.js", "TypeScript", "Tailwind CSS", "SQLite", "Recharts"],
