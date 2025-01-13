@@ -1,8 +1,9 @@
-import { useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogTitle } from "@headlessui/react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { useTranslations } from "../i18n/utils";
+import ImageCarousel from './ImageCarousel';
 
 interface Project {
   id: number;
@@ -10,14 +11,15 @@ interface Project {
   description: string;
   longDescription: string;
   technologies: string[];
-  image: string;
+  images: string[];
   websiteUrl: string;
   repositoryUrl: string;
   date: string;
 }
+
 type Lang = "en" | "fr" | "es";
 
-export default function ProjectsSection({ lang }: { lang: Lang }) {
+export default function ProjectsSection ({ lang }: { lang: Lang }) {
   const t = useTranslations(lang);
   const projects: Project[] = [
     {
@@ -26,7 +28,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       description: t("projects.project1.description"),
       longDescription: t("projects.project1.longDescription"),
       technologies: ["React.js", "TypeScript", "Tailwind CSS"],
-      image: "../MAFFI-TYPE.png",
+      images: ["../resources/MAFFI-TYPE.png"],
       websiteUrl: "https://maffi-type.vercel.app/",
       repositoryUrl: "https://github.com/Mafifa/maffi-type",
       date: "2023-12-15",
@@ -37,7 +39,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       description: t("projects.project2.description"),
       longDescription: t("projects.project2.longDescription"),
       technologies: ["Astro", "TypeScript", "Tailwind CSS"],
-      image: "../FerBooks.png",
+      images: ["../resources/FerBooks.png"],
       websiteUrl: "https://fer-books.vercel.app/",
       repositoryUrl: "https://github.com/Mafifa/fer-books",
       date: "2024-1-20",
@@ -54,7 +56,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
         "Tailwind CSS",
         "Supabase",
       ],
-      image: "../venezuelaso.png",
+      images: ["../resources/venezuelaso.png"],
       websiteUrl: "https://bdvcredito.vercel.app", // Puedes reemplazarlo con una URL real si lo tienes.
       repositoryUrl: "https://github.com/Mafifa/web-credito-bdv",
       date: "2024-08-27",
@@ -74,7 +76,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
         "Supabase",
         "Zustand",
       ],
-      image: "../dashboardso.png",
+      images: ["../resources/dashboardso.png"],
       websiteUrl: "https://github.com/Mafifa/gestor-web",
       repositoryUrl: "https://github.com/Mafifa/gestor-web",
       date: "2024-08-12",
@@ -85,18 +87,29 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
       description: t("projects.project5.description"),
       longDescription: t("projects.project5.longDescription"),
       technologies: ["Electron", "React.js", "TypeScript", "Tailwind CSS"],
-      image: "../pomodoroso.png",
+      images: ["../resources/pomodoroso.png"],
       websiteUrl: "https://github.com/Mafifa/Maff-pomodoro",
       repositoryUrl: "https://github.com/Mafifa/Maff-pomodoro",
       date: "2024-03-13",
     },
+    {
+      id: 6,
+      title: "Vendible",
+      description: t("projects.project6.description"),
+      longDescription: t("projects.project6.longDescription"),
+      technologies: ["Electron", "React.js", "TypeScript", "Tailwind CSS", "SQLite", "Recharts"],
+      images: ["../resources/vendible/dashboard.png", "../resources/vendible/Inventario.png", "../resources/vendible/ventas.png", "../resources/vendible/moda_venta.png", "../resources/vendible/Historial.png", "../resources/vendible/modal_historial.png", "../resources/vendible/analisis.png", "../resources/vendible/modo_oscuro.png"],
+      websiteUrl: "https://github.com/Mafifa/fac-inv",
+      repositoryUrl: "https://github.com/Mafifa/fac-inv",
+      date: "2025-01-13",
+    },
 
-    // Add more projects here...
   ];
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [filter, setFilter] = useState<string>("All");
   const [sortBy, setSortBy] = useState<"date" | "title">("date");
+
   const filteredProjects = projects
     .filter(
       (project) => filter === "All" || project.technologies.includes(filter)
@@ -224,7 +237,7 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
                 onClick={() => handleProjectClick(project)}
               >
                 <img
-                  src={project.image}
+                  src={project.images[0]}
                   alt={project.title}
                   className="w-full h-48 object-cover"
                 />
@@ -276,17 +289,13 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
                   exit="exit"
                   className="w-full max-w-2xl p-6 overflow-hidden text-left align-middle bg-gray-800 shadow-xl rounded-2xl"
                 >
-                  <Dialog.Title
+                  <DialogTitle
                     as="h3"
                     className="text-2xl font-medium leading-6 text-white mb-4"
                   >
                     {selectedProject.title}
-                  </Dialog.Title>
-                  <img
-                    src={selectedProject.image}
-                    alt={selectedProject.title}
-                    className="w-full h-64 object-cover rounded-lg mb-4"
-                  />
+                  </DialogTitle>
+                  <ImageCarousel images={selectedProject.images} />
                   <div className="mt-2">
                     <p className="text-sm text-gray-300 mb-4">
                       {selectedProject.longDescription}
@@ -329,3 +338,4 @@ export default function ProjectsSection({ lang }: { lang: Lang }) {
     </section>
   );
 }
+
