@@ -75,6 +75,7 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
         "Recharts",
         "Supabase",
         "Zustand",
+        "NodeJS"
       ],
       images: ["../resources/dashboardso.png"],
       websiteUrl: "https://github.com/Mafifa/gestor-web",
@@ -97,7 +98,7 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
       title: "VENDIBLE",
       description: t("projects.project6.description"),
       longDescription: t("projects.project6.longDescription"),
-      technologies: ["Electron", "React.js", "TypeScript", "Tailwind CSS", "SQLite", "Recharts"],
+      technologies: ["Electron", "React.js", "TypeScript", "Tailwind CSS", "SQLite", "Recharts", "NodeJS"],
       images: ["../resources/vendible/dashboard.png", "../resources/vendible/Inventario.png", "../resources/vendible/ventas.png", "../resources/vendible/moda_venta.png", "../resources/vendible/Historial.png", "../resources/vendible/modal_historial.png", "../resources/vendible/analisis.png", "../resources/vendible/modo_oscuro.png"],
       websiteUrl: "https://github.com/Mafifa/fac-inv",
       repositoryUrl: "https://github.com/Mafifa/fac-inv",
