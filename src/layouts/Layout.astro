@@ -3,6 +3,7 @@ interface Props {
 	title: string
 	description: string
 }
+
 import Header from "../components/Header.astro"
 import "@fontsource-variable/onest"
 const { description, title } = Astro.props
@@ -14,14 +15,26 @@ const { currentLocale } = Astro
 	<head>
 		<!-- Google Tag Manager -->
 		<script>
-			;(function (w, d, s, l, i) {
-				w[l] = w[l] || []
-				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != "dataLayer" ? "&l=" + l : ""
+			;(function (w: Window, d: Document, s: string, l: string, i: string) {
+				// Aseguramos que w[l] es un arreglo
+				const dataLayer = (w[l] = w[l] || []) as Array<Record<string, unknown>>
+				dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+
+				const f = d.getElementsByTagName(s)[0]
+				if (!f || !f.parentNode) {
+					console.error(
+						"No se pudo encontrar el elemento de script para insertar Google Tag Manager"
+					)
+					return
+				}
+
+				// Creamos el script y especificamos su tipo como HTMLScriptElement
+				const j = d.createElement(s) as HTMLScriptElement
+				const dl = l !== "dataLayer" ? "&l=" + l : ""
 				j.async = true
 				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+
+				// Insertamos el script antes del primero encontrado
 				f.parentNode.insertBefore(j, f)
 			})(window, document, "script", "dataLayer", "GTM-KLTN4CS9")
 		</script>

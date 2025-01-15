@@ -1,13 +1,12 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "baseUrl": "C:/Users/PC/Desktop/Proyectos/Mafifa.github.io",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-    },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
-  }
+	"extends": "astro/tsconfigs/strict",
+	"include": [".astro/types.d.ts", "**/*"],
+	"compilerOptions": {
+		"baseUrl": "C:/Users/PC/Desktop/Proyectos/Mafifa.github.io",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+		"jsx": "react-jsx",
+		"jsxImportSource": "react"
+	}
 }
