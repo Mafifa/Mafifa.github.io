@@ -15,11 +15,17 @@ const { currentLocale } = Astro
 	<head>
 		<!-- Google Tag Manager -->
 		<script>
+			// Función para inicializar Google Tag Manager
 			;(function (w: Window, d: Document, s: string, l: string, i: string) {
-				// Aseguramos que w[l] es un arreglo
-				const dataLayer = (w[l] = w[l] || []) as Array<Record<string, unknown>>
-				dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+				// Asegurar que dataLayer esté inicializada
+				if (!w.dataLayer) {
+					w.dataLayer = []
+				}
 
+				// Agregar un evento al dataLayer
+				w.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+
+				// Obtener el primer script del documento
 				const f = d.getElementsByTagName(s)[0]
 				if (!f || !f.parentNode) {
 					console.error(
@@ -28,13 +34,13 @@ const { currentLocale } = Astro
 					return
 				}
 
-				// Creamos el script y especificamos su tipo como HTMLScriptElement
+				// Crear el nuevo script y configurarlo
 				const j = d.createElement(s) as HTMLScriptElement
 				const dl = l !== "dataLayer" ? "&l=" + l : ""
 				j.async = true
 				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
 
-				// Insertamos el script antes del primero encontrado
+				// Insertar el script antes del primero encontrado
 				f.parentNode.insertBefore(j, f)
 			})(window, document, "script", "dataLayer", "GTM-KLTN4CS9")
 		</script>
