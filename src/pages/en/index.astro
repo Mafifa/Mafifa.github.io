@@ -25,31 +25,36 @@ const t = useTranslations(lang)
 >
 	<main>
 		<Container class="lg:w-[740px] py-20 mx-auto">
-			<div class="max-w- mx-auto">
+			<div class="flex items-center justify-center mx-auto">
 				<img
 					src="../resources/PERFIL1x1.jpg"
-					class="rounded-full size-20 mb-5"
+					class="rounded-full size-40 mr-5"
 					alt="carlos foto"
 				/>
+				<div>
+					<h1
+						class="text-white lg:pb-6 text-wrap md:text-4xl text-3xl lg:text-5xl flex font-bold flex-row gap-x-4 pb-10 items-center"
+					>
+						{t("site.im")}
+						<Badge class="items-center self-center justify-center">
+							<a
+								href="mailto:mafifacu@gmail.com"
+								target="_blank"
+								rel="nooperner"
+								>{t("site.work")}
+							</a>
+						</Badge>
+					</h1>
 
-				<h1
-					class="text-white lg:pb-6 text-wrap md:text-4xl text-3xl lg:text-5xl flex font-bold flex-row gap-x-4 pb-10 items-center"
-				>
-					{t("site.im")}
-					<Badge class="items-center self-center justify-center">
-						<a href="mailto:mafifacu@gmail.com" target="_blank" rel="nooperner"
-							>{t("site.work")}
-						</a>
-					</Badge>
-				</h1>
+					<h2
+						class="text-xl opacity-80 flex justify-center items-center text-pretty"
+					>
+						{t("site.about")}
+					</h2>
+				</div>
 			</div>
 
-			<h2
-				class="text-wrap text-xl lg:text-2xl opacity-80 flex justify-center items-center"
-			>
-				{t("site.about")}
-			</h2>
-			<nav class="flex gap-4 mt-4 flex-wrap">
+			<nav class="flex gap-3 mt-4 flex-wrap">
 				<SocialPill
 					target="_blank"
 					rel="nooperner noreferrer"
@@ -64,7 +69,7 @@ const t = useTranslations(lang)
 					href="https://twitter.com/Mafifa_Charlys"
 				>
 					<XIco class="size-4 md:size-5" />
-					Twit-x-ter
+					Twitter
 				</SocialPill>
 				<SocialPill
 					target="_blank"
@@ -74,7 +79,6 @@ const t = useTranslations(lang)
 					<EmailIco class="size-5 md:size-6" />
 					MafifaCu@gmail.com
 				</SocialPill>
-
 				<SocialPill download href="../archive/Mafifa-CV-EN.pdf">
 					<PDFIco />
 					CV-EN
@@ -102,8 +106,9 @@ const t = useTranslations(lang)
       </h2>
       <Dasca />
     </Container> -->
-
-		<ProjectsSection lang={lang} client:load />
+		<Container id="Proyectos">
+			<ProjectsSection lang={lang} client:load />
+		</Container>
 
 		<section class="bg-gray-800">
 			<Container id="Sobre-mi" class="lg:w-[740px] mx-auto mt-10">

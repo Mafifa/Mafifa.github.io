@@ -192,7 +192,7 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
   };
 
   return (
-    <section className="py-16 bg-[#1c1d22] text-white">
+    <section className="py-16 bg-[#141414] text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 flex items-center justify-center">
           <span className="text-blue-400 text-center mr-2">&lt;/&gt;</span>{" "}
