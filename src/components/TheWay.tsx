@@ -1,4 +1,3 @@
-import icon from './icons/icon.png'
 import { useEffect, useState, useRef } from 'react'
 
 // Importa los iconos que necesitas
@@ -332,7 +331,7 @@ export default function TheWayComponent () {
             <div className="mb-6 md:mb-8 relative animate-fadeIn" style={{ animationDelay: '0.2s' }}>
               <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-3xl overflow-hidden shadow-2xl scale-75 sm:scale-90 md:scale-100">
                 <img
-                  src={icon}
+                  src="./icons/icon.png"
                   alt="TheWay Logo"
                   className="w-full h-full object-cover"
                 />
@@ -637,7 +636,7 @@ export default function TheWayComponent () {
                     <div className="text-center p-4 sm:p-8">
                       <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-4 rounded-2xl overflow-hidden">
                         <img
-                          src={icon}
+                          src="./icons/icon.png"
                           alt="TheWay Logo"
                           className="w-full h-full object-cover"
                         />
@@ -687,7 +686,7 @@ export default function TheWayComponent () {
             >
               <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-2xl overflow-hidden">
                 <img
-                  src={icon}
+                  src="./icons/icon.png"
                   alt="TheWay Logo"
                   className="w-full h-full object-cover"
                 />
@@ -905,7 +904,7 @@ export default function TheWayComponent () {
             <div className="flex items-center mb-6 md:mb-0">
               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden mr-3">
                 <img
-                  src={icon}
+                  src="./icons/icon.png"
                   alt="TheWay Logo"
                   className="w-full h-full object-cover"
                 />

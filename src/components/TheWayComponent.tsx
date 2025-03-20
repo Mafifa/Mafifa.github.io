@@ -16,7 +16,7 @@ export function PortfolioIntegration ({ lang }: { lang: Lang }) {
                 <div className="absolute inset-0 bg-[#1a1a1a] opacity-30"></div>
                 <div className="relative z-10 w-3/5 h-3/5">
                   <img
-                    src="../resources/icon.png"
+                    src="./icons/icon.png"
                     alt="TheWay Logo"
                     className="w-full h-full object-contain"
                   />
