@@ -1,5 +1,3 @@
-'use client'
-
 import { useEffect, useState, useRef } from 'react'
 
 // Importez les icônes dont vous avez besoin
@@ -744,7 +742,7 @@ export default function TheWayComponent () {
                         observer.disconnect()
                       }
                     },
-                    { threshold: 0.1, delay: 100 }
+                    { threshold: 0.1 }
                   )
                   observer.observe(el)
                 }
@@ -773,7 +771,7 @@ export default function TheWayComponent () {
                         observer.disconnect()
                       }
                     },
-                    { threshold: 0.1, delay: 200 }
+                    { threshold: 0.1 }
                   )
                   observer.observe(el)
                 }
@@ -823,7 +821,7 @@ export default function TheWayComponent () {
                         observer.disconnect()
                       }
                     },
-                    { threshold: 0.1, delay: 300 }
+                    { threshold: 0.1 }
                   )
                   observer.observe(el)
                 }
