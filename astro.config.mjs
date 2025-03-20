@@ -7,7 +7,6 @@ const LIVE_URL = "http://mafifa.github.io/"
 export default defineConfig({
 	source: "/src",
 	site: LIVE_URL,
-	base: "https://github.com/Mafifa/Mafifa.github.io",
 	integrations: [tailwind(), react()],
 	i18n: {
 		defaultLocale: "en",
