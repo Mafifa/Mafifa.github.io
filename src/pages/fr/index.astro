@@ -14,20 +14,22 @@ import AboutMe from "../../components/AboutMe.astro"
 import AboutMeIco from "../../components/icons/AboutMeIco.astro"
 import { getLangFromUrl, useTranslations } from "../../i18n/utils"
 import ProjectsSection from "../../components/ProjectsSection"
+import { PortfolioIntegration } from "../../components/TheWayComponent"
+
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
 <Layout
 	title={t("site.title")}
-	description="Engagez Mafifa pour créer votre application web ou mobile.Développeur web, ingénieur en systèmes et fondateur de DASCA."
+	description="Hire Mafifa to create your web or mobile application.Web developer, systems engineer, and founder of DASCA."
 >
 	<main>
 		<Container class="lg:w-[740px] py-20 mx-auto">
-			<div class="flex items-center justify-center mx-auto">
+			<div class="lg:flex items-center justify-center mx-auto">
 				<img
 					src="../resources/PERFIL1x1.jpg"
-					class="rounded-full size-40 mr-5"
+					class="rounded-full lg:size-40 size-32 mr-5 mb-5"
 					alt="carlos foto"
 				/>
 				<div>
@@ -78,18 +80,27 @@ const t = useTranslations(lang)
 					<EmailIco class="size-5 md:size-6" />
 					MafifaCu@gmail.com
 				</SocialPill>
-				<SocialPill download href="../archive/Mafifa-CV-EN.pdf">
+				<SocialPill
+					download
+					href="../archive/Mafifa-CV-EN.pdf"
+				>
 					<PDFIco />
 					CV-EN
 				</SocialPill>
-				<SocialPill download href="../archive/Mafifa-CV.pdf">
+				<SocialPill
+					download
+					href="../archive/Mafifa-CV.pdf"
+				>
 					<PDFIco />
 					CV-ES
 				</SocialPill>
 			</nav>
 		</Container>
 
-		<Container id="Experiencia" class="lg:w-[740px] mx-auto">
+		<Container
+			id="Experiencia"
+			class="lg:w-[740px] mx-auto"
+		>
 			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
 				<BriefcaseIco class="size-8" />
 				{t("site.workE")}
@@ -97,20 +108,22 @@ const t = useTranslations(lang)
 			<Experience />
 			<slot />
 		</Container>
-
-		<!-- <Container id="Negocio" class="lg:w-[740px] mx-auto">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-        <DascaLogo />
-        {t("site.StartUp")}
-      </h2>
-      <Dasca />
-    </Container> -->
+		<PortfolioIntegration
+			lang={lang}
+			client:load
+		/>
 		<Container id="Proyectos">
-			<ProjectsSection lang={lang} client:load />
+			<ProjectsSection
+				lang={lang}
+				client:load
+			/>
 		</Container>
 
 		<section class="bg-gray-800">
-			<Container id="Sobre-mi" class="lg:w-[740px] mx-auto mt-10">
+			<Container
+				id="Sobre-mi"
+				class="lg:w-[740px] mx-auto mt-10"
+			>
 				<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center pt-5">
 					<AboutMeIco class="size-9" />
 					{t("site.aboutMe")}

@@ -1,139 +1,139 @@
-import { useState, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Dialog, DialogTitle } from "@headlessui/react";
-import { FaGithub, FaGlobe } from "react-icons/fa";
-import { useTranslations } from "../i18n/utils";
-import ImageCarousel from './ImageCarousel';
+import { useState, useCallback } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Dialog, DialogTitle } from '@headlessui/react'
+import { FaGithub, FaGlobe } from 'react-icons/fa'
+import { useTranslations } from '../i18n/utils'
+import ImageCarousel from './ImageCarousel'
 
 interface Project {
-  id: number;
-  title: string;
-  description: string;
-  longDescription: string;
-  technologies: string[];
-  images: string[];
-  websiteUrl: string;
-  repositoryUrl: string;
-  date: string;
+  id: number
+  title: string
+  description: string
+  longDescription: string
+  technologies: string[]
+  images: string[]
+  websiteUrl: string
+  repositoryUrl: string
+  date: string
 }
 
-type Lang = "en" | "fr" | "es";
+type Lang = 'en' | 'fr' | 'es'
 
 export default function ProjectsSection ({ lang }: { lang: Lang }) {
-  const t = useTranslations(lang);
+  const t = useTranslations(lang)
   const projects: Project[] = [
     {
       id: 1,
-      title: "MAFFI TYPE",
-      description: t("projects.project1.description"),
-      longDescription: t("projects.project1.longDescription"),
-      technologies: ["React.js", "TypeScript", "Tailwind CSS"],
-      images: ["../resources/MAFFI-TYPE.png"],
-      websiteUrl: "https://maffi-type.vercel.app/",
-      repositoryUrl: "https://github.com/Mafifa/maffi-type",
-      date: "2023-12-15",
+      title: 'MAFFI TYPE',
+      description: t('projects.project1.description'),
+      longDescription: t('projects.project1.longDescription'),
+      technologies: ['React.js', 'TypeScript', 'Tailwind CSS'],
+      images: ['../resources/MAFFI-TYPE.png'],
+      websiteUrl: 'https://maffi-type.vercel.app/',
+      repositoryUrl: 'https://github.com/Mafifa/maffi-type',
+      date: '2023-12-15'
     },
     {
       id: 2,
-      title: "Fer Books",
-      description: t("projects.project2.description"),
-      longDescription: t("projects.project2.longDescription"),
-      technologies: ["Astro", "TypeScript", "Tailwind CSS"],
-      images: ["../resources/FerBooks.png"],
-      websiteUrl: "https://fer-books.vercel.app/",
-      repositoryUrl: "https://github.com/Mafifa/fer-books",
-      date: "2024-1-20",
+      title: 'Fer Books',
+      description: t('projects.project2.description'),
+      longDescription: t('projects.project2.longDescription'),
+      technologies: ['Astro', 'TypeScript', 'Tailwind CSS'],
+      images: ['../resources/FerBooks.png'],
+      websiteUrl: 'https://fer-books.vercel.app/',
+      repositoryUrl: 'https://github.com/Mafifa/fer-books',
+      date: '2024-1-20'
     },
     {
       id: 3,
-      title: "BDV Crédito Clon",
-      description: t("projects.project3.description"),
-      longDescription: t("projects.project3.longDescription"),
+      title: 'BDV Crédito Clon',
+      description: t('projects.project3.description'),
+      longDescription: t('projects.project3.longDescription'),
       technologies: [
-        "React.js",
-        "Astro",
-        "TypeScript",
-        "Tailwind CSS",
-        "Supabase",
+        'React.js',
+        'Astro',
+        'TypeScript',
+        'Tailwind CSS',
+        'Supabase'
       ],
-      images: ["../resources/venezuelaso.png"],
-      websiteUrl: "https://bdvcredito.vercel.app", // Puedes reemplazarlo con una URL real si lo tienes.
-      repositoryUrl: "https://github.com/Mafifa/web-credito-bdv",
-      date: "2024-08-27",
+      images: ['../resources/venezuelaso.png'],
+      websiteUrl: 'https://bdvcredito.vercel.app', // Puedes reemplazarlo con una URL real si lo tienes.
+      repositoryUrl: 'https://github.com/Mafifa/web-credito-bdv',
+      date: '2024-08-27'
     },
     {
       id: 4,
-      title: "Gestor Web de Artículos y Ventas",
-      description: t("projects.project4.description"),
-      longDescription: t("projects.project4.longDescription"),
+      title: 'Gestor Web de Artículos y Ventas',
+      description: t('projects.project4.description'),
+      longDescription: t('projects.project4.longDescription'),
       technologies: [
-        "Electron",
-        "React.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Chart.js",
-        "Recharts",
-        "Supabase",
-        "Zustand",
-        "NodeJS"
+        'Electron',
+        'React.js',
+        'TypeScript',
+        'Tailwind CSS',
+        'Chart.js',
+        'Recharts',
+        'Supabase',
+        'Zustand',
+        'NodeJS'
       ],
-      images: ["../resources/dashboardso.png"],
-      websiteUrl: "https://github.com/Mafifa/gestor-web",
-      repositoryUrl: "https://github.com/Mafifa/gestor-web",
-      date: "2024-08-12",
+      images: ['../resources/dashboardso.png'],
+      websiteUrl: 'https://github.com/Mafifa/gestor-web',
+      repositoryUrl: 'https://github.com/Mafifa/gestor-web',
+      date: '2024-08-12'
     },
     {
       id: 5,
-      title: "Mafifa Pomodoro",
-      description: t("projects.project5.description"),
-      longDescription: t("projects.project5.longDescription"),
-      technologies: ["Electron", "React.js", "TypeScript", "Tailwind CSS"],
-      images: ["../resources/pomodoroso.png"],
-      websiteUrl: "https://github.com/Mafifa/Maff-pomodoro",
-      repositoryUrl: "https://github.com/Mafifa/Maff-pomodoro",
-      date: "2024-03-13",
+      title: 'Mafifa Pomodoro',
+      description: t('projects.project5.description'),
+      longDescription: t('projects.project5.longDescription'),
+      technologies: ['Electron', 'React.js', 'TypeScript', 'Tailwind CSS'],
+      images: ['../resources/pomodoroso.png'],
+      websiteUrl: 'https://github.com/Mafifa/Maff-pomodoro',
+      repositoryUrl: 'https://github.com/Mafifa/Maff-pomodoro',
+      date: '2024-03-13'
     },
     {
       id: 6,
-      title: "VENDIBLE",
-      description: t("projects.project6.description"),
-      longDescription: t("projects.project6.longDescription"),
-      technologies: ["Electron", "React.js", "TypeScript", "Tailwind CSS", "SQLite", "Recharts", "NodeJS"],
-      images: ["../resources/vendible/dashboard.png", "../resources/vendible/Inventario.png", "../resources/vendible/ventas.png", "../resources/vendible/moda_venta.png", "../resources/vendible/Historial.png", "../resources/vendible/modal_historial.png", "../resources/vendible/analisis.png", "../resources/vendible/modo_oscuro.png"],
-      websiteUrl: "https://github.com/Mafifa/fac-inv",
-      repositoryUrl: "https://github.com/Mafifa/fac-inv",
-      date: "2025-01-13",
-    },
+      title: 'VENDIBLE',
+      description: t('projects.project6.description'),
+      longDescription: t('projects.project6.longDescription'),
+      technologies: ['Electron', 'React.js', 'TypeScript', 'Tailwind CSS', 'SQLite', 'Recharts', 'NodeJS'],
+      images: ['../resources/vendible/dashboard.png', '../resources/vendible/Inventario.png', '../resources/vendible/ventas.png', '../resources/vendible/moda_venta.png', '../resources/vendible/Historial.png', '../resources/vendible/modal_historial.png', '../resources/vendible/analisis.png', '../resources/vendible/modo_oscuro.png'],
+      websiteUrl: 'https://github.com/Mafifa/fac-inv',
+      repositoryUrl: 'https://github.com/Mafifa/fac-inv',
+      date: '2025-01-13'
+    }
 
-  ];
+  ]
 
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [filter, setFilter] = useState<string>("All");
-  const [sortBy, setSortBy] = useState<"date" | "title">("date");
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+  const [filter, setFilter] = useState<string>('All')
+  const [sortBy, setSortBy] = useState<'date' | 'title'>('date')
 
   const filteredProjects = projects
     .filter(
-      (project) => filter === "All" || project.technologies.includes(filter)
+      (project) => filter === 'All' || project.technologies.includes(filter)
     )
     .sort((a, b) => {
-      if (sortBy === "date") {
-        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      if (sortBy === 'date') {
+        return new Date(b.date).getTime() - new Date(a.date).getTime()
       } else {
-        return a.title.localeCompare(b.title);
+        return a.title.localeCompare(b.title)
       }
-    });
+    })
 
   const allTechnologies = Array.from(
     new Set(projects.flatMap((p) => p.technologies))
-  );
+  )
 
   const handleProjectClick = useCallback((project: Project) => {
-    setSelectedProject(project);
-  }, []);
+    setSelectedProject(project)
+  }, [])
 
   const closeModal = useCallback(() => {
-    setSelectedProject(null);
-  }, []);
+    setSelectedProject(null)
+  }, [])
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -141,10 +141,10 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.3,
-      },
-    },
-  };
+        delayChildren: 0.3
+      }
+    }
+  }
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
@@ -152,12 +152,12 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 100,
-        damping: 15,
-      },
-    },
-  };
+        damping: 15
+      }
+    }
+  }
 
   const modalVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -165,46 +165,46 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
       opacity: 1,
       y: 0,
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 300,
-        damping: 30,
-      },
+        damping: 30
+      }
     },
     exit: {
       opacity: 0,
       y: 50,
       transition: {
-        type: "spring",
+        type: 'spring',
         stiffness: 300,
-        damping: 30,
-      },
-    },
-  };
+        damping: 30
+      }
+    }
+  }
 
   const overlayVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.2,
-      },
-    },
-  };
+        duration: 0.2
+      }
+    }
+  }
 
   return (
     <section className="py-16 bg-[#141414] text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 flex items-center justify-center">
-          <span className="text-blue-400 text-center mr-2">&lt;/&gt;</span>{" "}
-          {t("site.projects")}
+          <span className="text-blue-400 text-center mr-2">&lt;/&gt;</span>{' '}
+          {t('site.projects')}
         </h2>
 
         <div className="mb-8 flex items-center justify-center flex-wrap gap-4">
           <select
             className="bg-gray-800 text-white px-4 py-2 rounded-md"
-            onChange={(e) => setFilter(e.target.value)}
+            onChange={(e) => { setFilter(e.target.value) }}
           >
-            <option value="All">{t("Technologies")}</option>
+            <option value="All">{t('Technologies')}</option>
             {allTechnologies.map((tech) => (
               <option key={tech} value={tech}>
                 {tech}
@@ -213,10 +213,10 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
           </select>
           <select
             className="bg-gray-800 text-white px-4 py-2 rounded-md"
-            onChange={(e) => setSortBy(e.target.value as "date" | "title")}
+            onChange={(e) => { setSortBy(e.target.value as 'date' | 'title') }}
           >
-            <option value="date">{t("sort")}</option>
-            <option value="title">{t("sortT")}</option>
+            <option value="date">{t('sort')}</option>
+            <option value="title">{t('sortT')}</option>
           </select>
         </div>
 
@@ -235,7 +235,7 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 cursor-pointer will-change-transform"
-                onClick={() => handleProjectClick(project)}
+                onClick={() => { handleProjectClick(project) }}
               >
                 <img
                   src={project.images[0]}
@@ -337,6 +337,5 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
         </AnimatePresence>
       </div>
     </section>
-  );
+  )
 }
-

@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/indent */
+/* eslint-disable @typescript-eslint/quotes */
+/* eslint-disable no-tabs */
 export const languages = {
 	en: "English",
 	fr: "Français",
-	es: "Español",
+	es: "Español"
 }
 export const showDefaultLang = true
 
@@ -85,6 +88,10 @@ export const ui = {
 			"A billing and inventory system built with Electron, offering various management methods and adaptable modes to suit different rates for the user.",
 		"projects.project6.longDescription":
 			"VENDIBLE is a robust desktop application for inventory and billing management, specifically designed for businesses operating with multiple currencies (Bolivares and Dollars [For use in Venezuela]). It offers an intuitive interface and comprehensive features for sales and inventory control.",
+		"theWay.destacado": "Featured Project",
+		"theWay.description":
+			"A minimalist application for secure file transfer between multiple platforms. TheWay acts as a bridge connecting different systems, allowing data to be shared in an encrypted and efficient way.",
+		"theWay.verCompleto": "View Complete Project"
 	},
 	fr: {
 		sortT: "Trier par Titre",
@@ -163,6 +170,10 @@ export const ui = {
 			"Un système de facturation et d'inventaire développé avec Electron, offrant diverses méthodes de gestion et des modes adaptables à différents taux pour l'utilisateur.",
 		"projects.project6.longDescription":
 			"VENDIBLE est une application de bureau robuste pour la gestion d'inventaire et de facturation, conçue spécifiquement pour les entreprises opérant avec plusieurs devises (Bolivars et Dollars [Pour usage au Venezuela]). Elle propose une interface intuitive et des fonctionnalités complètes pour le contrôle des ventes et des stocks.",
+		"theWay.destacado": "Projet en vedette",
+		"theWay.description":
+			"Une application minimaliste pour le transfert sécurisé de fichiers entre plusieurs plateformes. TheWay agit comme un pont reliant différents systèmes, permettant de partager des données de manière cryptée et efficace.",
+		"theWay.verCompleto": "Voir le projet Complet"
 	},
 	es: {
 		sortT: "Ordernar por Titulo",
@@ -242,5 +253,9 @@ export const ui = {
 			"Un sistema de facturación e inventario en Electron con varios métodos de gestion y modos adaptable a diferentes tasas para el usuario.",
 		"projects.project6.longDescription":
 			"VENDIBLE es una aplicación de escritorio robusta para la gestión de inventario y facturación, diseñada específicamente para negocios que operan con múltiples monedas (Bolivares y Dolares [Para uso de Venezuela]). Ofrece una interfaz intuitiva y funcionalidades completas para el control de ventas e inventario.",
-	},
+		"theWay.destacado": "Proyecto Destacado",
+		"theWay.description":
+			"Una aplicación minimalista para la transferencia segura de archivos entre múltiples plataformas. TheWay actúa como un puente que conecta diferentes sistemas, permitiendo compartir datos de forma encriptada y eficiente.",
+		"theWay.verCompleto": "Ver Proyecto Completo"
+	}
 } as const
