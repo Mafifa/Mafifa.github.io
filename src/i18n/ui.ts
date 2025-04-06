@@ -91,7 +91,7 @@ export const ui = {
 		"theWay.destacado": "Featured Project",
 		"theWay.description":
 			"A minimalist application for secure file transfer between multiple platforms. TheWay acts as a bridge connecting different systems, allowing data to be shared in an encrypted and efficient way.",
-		"theWay.verCompleto": "View Complete Project"
+		"theWay.verCompleto": "View Full Project"
 	},
 	fr: {
 		sortT: "Trier par Titre",
