@@ -253,17 +253,13 @@ function Footer ({ onPrivacyClick, onTermsClick }: FooterProps) {
               Una aplicación de productividad única con ojos que siguen tu cursor y reaccionan cuando estás inactivo.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://github.com/Mafifa/eyep" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Github size={20} />
                 <span className="sr-only">GitHub</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://x.com/Mafifa_Charlys" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                <Instagram size={20} />
-                <span className="sr-only">Instagram</span>
               </a>
             </div>
           </div>
@@ -430,7 +426,7 @@ function EyesComponent ({ emotion }: EyesComponentProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isMouseMoving, setIsMouseMoving] = useState(true)
   const containerRef = useRef<HTMLDivElement>(null)
-  const mouseTimerRef = useRef<NodeJS.Timeout | null>(null)
+  const mouseTimerRef = useRef(null)
 
   // Optimización: Reducir la frecuencia de actualización del seguimiento del mouse
   useEffect(() => {
@@ -694,8 +690,8 @@ export default function EyePLandingPage () {
   const [showTermsModal, setShowTermsModal] = useState(false)
 
   // Enlaces de MEGA para las descargas
-  const windowsMegaLink = "https://mega.nz/your-windows-app-link"
-  const macosMegaLink = "https://mega.nz/your-macos-app-link"
+  const windowsMegaLink = "https://mega.nz/file/k10XnLoY#gjc1mYuVAwwZKU7VNHSlMPyWpqXW2PRJkdKo31wkwgw"
+  const macosMegaLink = "https://mega.nz/file/1g1FnLRT#mqI9Q-YXnRvfkpSLwhYjBC_sRbMcuUhVLl6Rro89u8M"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white">
@@ -724,7 +720,7 @@ export default function EyePLandingPage () {
               </h1>
 
               <p className="text-xl mb-8 text-gray-300 max-w-xl mx-auto md:mx-0">
-                Una aplicación Pomodoro revolucionaria que te observa mientras trabajas, adaptándose a tu ritmo y
+                Una aplicación Pomodoro divertida que te observa mientras trabajas, adaptándose a tu ritmo y
                 manteniendo tu enfoque en lo que realmente importa.
               </p>
 

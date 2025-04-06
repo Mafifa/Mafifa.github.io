@@ -274,17 +274,13 @@ function Footer ({ onPrivacyClick, onTermsClick }: FooterProps) {
               êtes inactif.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://github.com/Mafifa/eyep" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Github size={20} />
                 <span className="sr-only">GitHub</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://x.com/Mafifa_Charlys" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                <Instagram size={20} />
-                <span className="sr-only">Instagram</span>
               </a>
             </div>
           </div>
@@ -451,7 +447,7 @@ function EyesComponent ({ emotion }: EyesComponentProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isMouseMoving, setIsMouseMoving] = useState(true)
   const containerRef = useRef<HTMLDivElement>(null)
-  const mouseTimerRef = useRef<NodeJS.Timeout | null>(null)
+  const mouseTimerRef = useRef(null)
 
   // Optimisation : Réduire la fréquence de mise à jour du suivi de la souris
   useEffect(() => {
@@ -715,8 +711,8 @@ export default function EyePLandingPageFR () {
   const [showTermsModal, setShowTermsModal] = useState(false)
 
   // Liens MEGA pour les téléchargements
-  const windowsMegaLink = "https://mega.nz/your-windows-app-link"
-  const macosMegaLink = "https://mega.nz/your-macos-app-link"
+  const windowsMegaLink = "https://mega.nz/file/k10XnLoY#gjc1mYuVAwwZKU7VNHSlMPyWpqXW2PRJkdKo31wkwgw"
+  const macosMegaLink = "https://mega.nz/file/1g1FnLRT#mqI9Q-YXnRvfkpSLwhYjBC_sRbMcuUhVLl6Rro89u8M"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white">

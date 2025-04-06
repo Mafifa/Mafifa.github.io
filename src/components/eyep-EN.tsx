@@ -1,5 +1,3 @@
-"use client"
-
 import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
@@ -282,17 +280,13 @@ function Footer ({ onPrivacyClick, onTermsClick }: FooterProps) {
               A unique productivity app with eyes that follow your cursor and react when you're idle.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://github.com/Mafifa/eyep" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Github size={20} />
                 <span className="sr-only">GitHub</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
+              <a href="https://x.com/Mafifa_Charlys" className="text-gray-400 hover:text-yellow-400 transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-400 transition-colors">
-                <Instagram size={20} />
-                <span className="sr-only">Instagram</span>
               </a>
             </div>
           </div>
@@ -366,7 +360,7 @@ function Navbar () {
     <header className="bg-black/90 backdrop-blur-sm text-white py-4 border-b border-yellow-400/30 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center gap-3">
+          <a href="#" className="flex items-center gap-3">
             <img src="../../../resources/eyep.png" alt="EyeP" width={40} height={40} className="rounded-md" />
             <span className="font-bold text-xl text-yellow-400">EyeP</span>
           </a>
@@ -459,7 +453,7 @@ function EyesComponent ({ emotion }: EyesComponentProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isMouseMoving, setIsMouseMoving] = useState(true)
   const containerRef = useRef<HTMLDivElement>(null)
-  const mouseTimerRef = useRef<NodeJS.Timeout | null>(null)
+  const mouseTimerRef = useRef<number | null>(null)
 
   // Optimization: Reduce frequency of mouse tracking updates
   useEffect(() => {
@@ -820,8 +814,8 @@ export default function EyePLandingPage () {
   const [showTermsModal, setShowTermsModal] = useState(false)
 
   // MEGA links for downloads
-  const windowsMegaLink = "https://mega.nz/your-windows-app-link"
-  const macosMegaLink = "https://mega.nz/your-macos-app-link"
+  const windowsMegaLink = "https://mega.nz/file/k10XnLoY#gjc1mYuVAwwZKU7VNHSlMPyWpqXW2PRJkdKo31wkwgw"
+  const macosMegaLink = "https://mega.nz/file/1g1FnLRT#mqI9Q-YXnRvfkpSLwhYjBC_sRbMcuUhVLl6Rro89u8M"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white">
@@ -850,7 +844,7 @@ export default function EyePLandingPage () {
               </h1>
 
               <p className="text-xl mb-8 text-gray-300 max-w-xl mx-auto md:mx-0">
-                A revolutionary Pomodoro app that watches you while you work, adapting to your pace and keeping your
+                A funny Pomodoro app that watches you while you work, adapting to your pace and keeping your
                 focus on what truly matters.
               </p>
 
