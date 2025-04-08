@@ -74,18 +74,32 @@ interface DownloadCounterProps {
 
 // Composant DownloadCounter
 function DownloadCounter ({ initialCount = 0 }: DownloadCounterProps) {
-  const [downloadCount, setDownloadCount] = useState(initialCount)
-  const [isLoading, setIsLoading] = useState(true)
+  const [downloadCount, setDownloadCount] = useState<number>(() => {
+    // Verificar si estamos en un entorno de navegador
+    if (typeof window !== "undefined") {
+      const savedCount = localStorage.getItem("downloadCount");
+      return savedCount ? parseInt(savedCount, 10) : initialCount;
+    }
+    return initialCount; // Valor predeterminado si no hay acceso a localStorage
+  });
+
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simuler le chargement des données
-    const timer = setTimeout(() => {
-      setDownloadCount(initialCount)
-      setIsLoading(false)
-    }, 1000)
+    if (typeof window !== "undefined") {
+      // Incrementar el contador en 39 al cargar la página
+      const newCount = downloadCount + 39;
+      setDownloadCount(newCount);
+      localStorage.setItem("downloadCount", newCount.toString());
+    }
 
-    return () => clearTimeout(timer)
-  }, [initialCount])
+    // Simular carga de datos
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []); // Solo se ejecuta al cargar la página
 
   return (
     <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 flex items-center gap-3 border border-yellow-400/20">
@@ -93,13 +107,13 @@ function DownloadCounter ({ initialCount = 0 }: DownloadCounterProps) {
         <Download className="w-6 h-6 text-yellow-400" />
       </div>
       <div>
-        <h3 className="text-sm font-medium text-gray-400">Téléchargements Totaux</h3>
+        <h3 className="text-sm font-medium text-gray-400">Total Downloads</h3>
         <p className="text-2xl font-bold text-yellow-400">
-          {isLoading ? "Chargement..." : new Intl.NumberFormat().format(downloadCount)}
+          {isLoading ? "Loading..." : new Intl.NumberFormat().format(downloadCount)}
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 // Composant DownloadButton
@@ -711,8 +725,8 @@ export default function EyePLandingPageFR () {
   const [showTermsModal, setShowTermsModal] = useState(false)
 
   // Liens MEGA pour les téléchargements
-  const windowsMegaLink = "https://mega.nz/file/k10XnLoY#gjc1mYuVAwwZKU7VNHSlMPyWpqXW2PRJkdKo31wkwgw"
-  const macosMegaLink = "https://mega.nz/file/1g1FnLRT#mqI9Q-YXnRvfkpSLwhYjBC_sRbMcuUhVLl6Rro89u8M"
+  const windowsMegaLink = "https://mega.nz/file/5hl30KgY#uTuqHyFcl3wwzRnFzvR8ghRraBzfBv5czN0nNyAK2xY"
+  const macosMegaLink = "https://mega.nz/file/59lSAKhC#rR0CuKSeopDBrhU_FK52CQi8J6rF2opWQEq11s9jhk0"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white">

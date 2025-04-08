@@ -81,18 +81,32 @@ interface TransparentModeAnimationProps {
 
 // DownloadCounter Component
 function DownloadCounter ({ initialCount = 0 }: DownloadCounterProps) {
-  const [downloadCount, setDownloadCount] = useState(initialCount)
-  const [isLoading, setIsLoading] = useState(true)
+  const [downloadCount, setDownloadCount] = useState<number>(() => {
+    // Verificar si estamos en un entorno de navegador
+    if (typeof window !== "undefined") {
+      const savedCount = localStorage.getItem("downloadCount");
+      return savedCount ? parseInt(savedCount, 10) : initialCount;
+    }
+    return initialCount; // Valor predeterminado si no hay acceso a localStorage
+  });
+
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading data
-    const timer = setTimeout(() => {
-      setDownloadCount(initialCount)
-      setIsLoading(false)
-    }, 1000)
+    if (typeof window !== "undefined") {
+      // Incrementar el contador en 39 al cargar la página
+      const newCount = downloadCount + 39;
+      setDownloadCount(newCount);
+      localStorage.setItem("downloadCount", newCount.toString());
+    }
 
-    return () => clearTimeout(timer)
-  }, [initialCount])
+    // Simular carga de datos
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []); // Solo se ejecuta al cargar la página
 
   return (
     <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-4 flex items-center gap-3 border border-yellow-400/20">
@@ -106,7 +120,7 @@ function DownloadCounter ({ initialCount = 0 }: DownloadCounterProps) {
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 // DownloadButton Component
@@ -814,8 +828,8 @@ export default function EyePLandingPage () {
   const [showTermsModal, setShowTermsModal] = useState(false)
 
   // MEGA links for downloads
-  const windowsMegaLink = "https://mega.nz/file/k10XnLoY#gjc1mYuVAwwZKU7VNHSlMPyWpqXW2PRJkdKo31wkwgw"
-  const macosMegaLink = "https://mega.nz/file/1g1FnLRT#mqI9Q-YXnRvfkpSLwhYjBC_sRbMcuUhVLl6Rro89u8M"
+  const windowsMegaLink = "https://mega.nz/file/5hl30KgY#uTuqHyFcl3wwzRnFzvR8ghRraBzfBv5czN0nNyAK2xY"
+  const macosMegaLink = "https://mega.nz/file/59lSAKhC#rR0CuKSeopDBrhU_FK52CQi8J6rF2opWQEq11s9jhk0"
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white">
