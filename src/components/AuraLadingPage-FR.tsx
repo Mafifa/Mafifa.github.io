@@ -258,7 +258,7 @@ export default function AuraLandingPageFR () {
                 <h3 className="text-xl font-medium mb-2">Windows</h3>
                 <p className="text-gray-400 text-sm mb-4">64-bit uniquement</p>
                 <a
-                  href="#"
+                  href="https://mega.nz/file/hldEHTpK#TISd-FpS2kvboIkqRH2gSIcz_0dDd2nWc-TUO52_35I"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-red-700 to-red-900 hover:from-red-600 hover:to-red-800 px-6 py-2 rounded-lg transition-all duration-300"
                 >
                   <Download size={18} />
@@ -281,7 +281,7 @@ export default function AuraLandingPageFR () {
                 <h3 className="text-xl font-medium mb-2">macOS</h3>
                 <p className="text-gray-400 text-sm mb-4">64-bit uniquement</p>
                 <a
-                  href="#"
+                  href="https://mega.nz/file/cw9UVRwa#5CDs1T7NMLpvEJWe_E33aDs5SBzgJMFf5pVw3G-aBXk"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-red-700 to-red-900 hover:from-red-600 hover:to-red-800 px-6 py-2 rounded-lg transition-all duration-300"
                 >
                   <Download size={18} />
