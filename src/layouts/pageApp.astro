@@ -54,6 +54,14 @@ const { currentLocale } = Astro
 		min-height: 100vh;
 		background: #141414;
 	}
+	/* Add blur utility if needed */
+	.blur-3xl {
+		--tw-blur: blur(64px);
+		filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+			var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+			var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+	}
+
 	@media (prefers-reduced-motion: reduce) {
 		html {
 			scroll-behavior: auto;

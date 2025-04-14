@@ -1,0 +1,13 @@
+---
+import PageApp from "../../layouts/pageApp.astro"
+import AuraLandingPage from "../../components/AuraLadingPage-FR"
+---
+
+<PageApp
+	title="Aura"
+	description="Aura App MultiPlataform"
+>
+	<main>
+		<AuraLandingPage client:only />
+	</main>
+</PageApp>

@@ -16,6 +16,7 @@ import { getLangFromUrl, useTranslations } from "../../i18n/utils"
 import ProjectsSection from "../../components/ProjectsSection"
 import { PortfolioIntegration } from "../../components/TheWayComponent"
 import ProjectBannerFR from "../../components/eyep-banner-fr"
+import { AuraBannerFR } from "../../components/Aura-banner-FR"
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
@@ -109,12 +110,17 @@ const t = useTranslations(lang)
 			<Experience />
 			<slot />
 		</Container>
-		<PortfolioIntegration
-			lang={lang}
+		<AuraBannerFR
+			projectUrl={`/${lang}/Aura`}
 			client:load
 		/>
+
 		<ProjectBannerFR
 			projectUrl={`/${lang}/EyeP`}
+			client:load
+		/>
+		<PortfolioIntegration
+			lang={lang}
 			client:load
 		/>
 		<Container id="Proyectos">
