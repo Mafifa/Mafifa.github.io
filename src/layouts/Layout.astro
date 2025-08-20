@@ -18,7 +18,7 @@ const { currentLocale } = Astro
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-				<script src="/scripts/starfield.js" defer></script>
+				<script is:inline src="/scripts/starfield.js"></script>
         <title>{title}</title>
     </head>
     <body>
