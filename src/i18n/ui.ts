@@ -21,11 +21,11 @@ export const ui = {
 		"header.about": "About me",
 		"site.title": "Mafifa's portfolio - Developer and Web programmer",
 		"site.description":
-			"Mafifa is a web developer and a System Engineer student",
+			"Mafifa is a web developer and a Computer Engineer student",
 		"site.im": "Hey, I'm Mafifa",
 		"site.work": "Available to work",
 		"site.about":
-			"Systems Engineering student and Fullstack web developer. Specialized in TypeScript, React, Astro and NextJS bases. With experience in project leadership and optimization of digital experiences.",
+			"Computer Engineering student and Fullstack web developer. Specialized in TypeScript, React, Astro and NextJS bases. With experience in project leadership and optimization of digital experiences.",
 		"site.workE": "Work experience",
 		"site.StartUp": "Innovation in Software Development",
 		"site.StartUpDescription":
@@ -185,11 +185,11 @@ export const ui = {
 		"header.about": "Sobre mi",
 		"site.title": "Mafifa portafolio - Desarrolador y Programador Web",
 		"site.description":
-			"Mafifa es un Desarrollador Web y un estudiante de Ingieneria en Sistemas",
+			"Mafifa es un Desarrollador Web y un estudiante de Ingieneria Informatica",
 		"site.im": "Hey, Soy Mafifa",
 		"site.work": "Disponible",
 		"site.about":
-			"Estudiante de Ingeniería de Sistemas y desarrollador web Fullstack. Especializado en TypeScript, React, Astro, NextJS y Express. Con experiencia en liderazgo de proyectos y optimización de experiencias digitales.",
+			"Estudiante de Ingeniería y desarrollador web Fullstack. Especializado en TypeScript, React, Astro, NextJS y Express. Con experiencia en liderazgo de proyectos y optimización de experiencias digitales.",
 		"site.workE": "Experiencia laboral",
 		"site.StartUp": "Innovación en Desarrollo de Software",
 		"site.StartUpDescription":
