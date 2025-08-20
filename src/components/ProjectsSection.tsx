@@ -44,66 +44,66 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
       repositoryUrl: 'https://github.com/Mafifa/fer-books',
       date: '2024-1-20'
     },
-    {
-      id: 3,
-      title: 'BDV Crédito Clon',
-      description: t('projects.project3.description'),
-      longDescription: t('projects.project3.longDescription'),
-      technologies: [
-        'React.js',
-        'Astro',
-        'TypeScript',
-        'Tailwind CSS',
-        'Supabase'
-      ],
-      images: ['../resources/venezuelaso.png'],
-      websiteUrl: 'https://bdvcredito.vercel.app', // Puedes reemplazarlo con una URL real si lo tienes.
-      repositoryUrl: 'https://github.com/Mafifa/web-credito-bdv',
-      date: '2024-08-27'
-    },
-    {
-      id: 4,
-      title: 'Gestor Web de Artículos y Ventas',
-      description: t('projects.project4.description'),
-      longDescription: t('projects.project4.longDescription'),
-      technologies: [
-        'Electron',
-        'React.js',
-        'TypeScript',
-        'Tailwind CSS',
-        'Chart.js',
-        'Recharts',
-        'Supabase',
-        'Zustand',
-        'NodeJS'
-      ],
-      images: ['../resources/dashboardso.png'],
-      websiteUrl: 'https://github.com/Mafifa/gestor-web',
-      repositoryUrl: 'https://github.com/Mafifa/gestor-web',
-      date: '2024-08-12'
-    },
-    {
-      id: 5,
-      title: 'Mafifa Pomodoro',
-      description: t('projects.project5.description'),
-      longDescription: t('projects.project5.longDescription'),
-      technologies: ['Electron', 'React.js', 'TypeScript', 'Tailwind CSS'],
-      images: ['../resources/pomodoroso.png'],
-      websiteUrl: 'https://github.com/Mafifa/Maff-pomodoro',
-      repositoryUrl: 'https://github.com/Mafifa/Maff-pomodoro',
-      date: '2024-03-13'
-    },
-    {
-      id: 6,
-      title: 'VENDIBLE',
-      description: t('projects.project6.description'),
-      longDescription: t('projects.project6.longDescription'),
-      technologies: ['Electron', 'React.js', 'TypeScript', 'Tailwind CSS', 'SQLite', 'Recharts', 'NodeJS'],
-      images: ['../resources/vendible/dashboard.png', '../resources/vendible/Inventario.png', '../resources/vendible/ventas.png', '../resources/vendible/moda_venta.png', '../resources/vendible/Historial.png', '../resources/vendible/modal_historial.png', '../resources/vendible/analisis.png', '../resources/vendible/modo_oscuro.png'],
-      websiteUrl: 'https://github.com/Mafifa/fac-inv',
-      repositoryUrl: 'https://github.com/Mafifa/fac-inv',
-      date: '2025-01-13'
-    }
+    // {
+    //   id: 3,
+    //   title: 'BDV Crédito Clon',
+    //   description: t('projects.project3.description'),
+    //   longDescription: t('projects.project3.longDescription'),
+    //   technologies: [
+    //     'React.js',
+    //     'Astro',
+    //     'TypeScript',
+    //     'Tailwind CSS',
+    //     'Supabase'
+    //   ],
+    //   images: ['../resources/venezuelaso.png'],
+    //   websiteUrl: 'https://bdvcredito.vercel.app', // Puedes reemplazarlo con una URL real si lo tienes.
+    //   repositoryUrl: 'https://github.com/Mafifa/web-credito-bdv',
+    //   date: '2024-08-27'
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Gestor Web de Artículos y Ventas',
+    //   description: t('projects.project4.description'),
+    //   longDescription: t('projects.project4.longDescription'),
+    //   technologies: [
+    //     'Electron',
+    //     'React.js',
+    //     'TypeScript',
+    //     'Tailwind CSS',
+    //     'Chart.js',
+    //     'Recharts',
+    //     'Supabase',
+    //     'Zustand',
+    //     'NodeJS'
+    //   ],
+    //   images: ['../resources/dashboardso.png'],
+    //   websiteUrl: 'https://github.com/Mafifa/gestor-web',
+    //   repositoryUrl: 'https://github.com/Mafifa/gestor-web',
+    //   date: '2024-08-12'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Mafifa Pomodoro',
+    //   description: t('projects.project5.description'),
+    //   longDescription: t('projects.project5.longDescription'),
+    //   technologies: ['Electron', 'React.js', 'TypeScript', 'Tailwind CSS'],
+    //   images: ['../resources/pomodoroso.png'],
+    //   websiteUrl: 'https://github.com/Mafifa/Maff-pomodoro',
+    //   repositoryUrl: 'https://github.com/Mafifa/Maff-pomodoro',
+    //   date: '2024-03-13'
+    // },
+    // {
+    //   id: 6,
+    //   title: 'VENDIBLE',
+    //   description: t('projects.project6.description'),
+    //   longDescription: t('projects.project6.longDescription'),
+    //   technologies: ['Electron', 'React.js', 'TypeScript', 'Tailwind CSS', 'SQLite', 'Recharts', 'NodeJS'],
+    //   images: ['../resources/vendible/dashboard.png', '../resources/vendible/Inventario.png', '../resources/vendible/ventas.png', '../resources/vendible/moda_venta.png', '../resources/vendible/Historial.png', '../resources/vendible/modal_historial.png', '../resources/vendible/analisis.png', '../resources/vendible/modo_oscuro.png'],
+    //   websiteUrl: 'https://github.com/Mafifa/fac-inv',
+    //   repositoryUrl: 'https://github.com/Mafifa/fac-inv',
+    //   date: '2025-01-13'
+    // }
 
   ]
 
@@ -192,7 +192,7 @@ export default function ProjectsSection ({ lang }: { lang: Lang }) {
   }
 
   return (
-    <section className="py-16 bg-[#141414] text-white">
+    <section className="py-16 text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 flex items-center justify-center">
           <span className="text-blue-400 text-center mr-2">&lt;/&gt;</span>{' '}
