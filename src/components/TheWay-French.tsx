@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 // Importez les icônes dont vous avez besoin
 // Si vous utilisez react-icons, vous pouvez remplacer ces importations

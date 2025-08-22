@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Download, Star, Bell, Clock, ChevronRight, Apple, Monitor } from "lucide-react"
+import { Apple, Bell, ChevronRight, Clock, Download, Monitor, Star } from "lucide-react"
+import { useEffect, useState } from "react"
 
 export default function AuraLandingPageFR () {
   const [scrollY, setScrollY] = useState(0)

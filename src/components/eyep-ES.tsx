@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react"
-import { Clock, Download, Coffee, Brain, MousePointer, Monitor, Timer, Focus, ArrowDown, Menu, X, Github, Twitter, Instagram, ChevronDown, ChevronUp, ComputerIcon as Windows, Apple, Eye } from 'lucide-react'
+import { Apple, ArrowDown, Brain, ChevronDown, ChevronUp, Clock, Coffee, Download, Focus, Github, Menu, Monitor, MousePointer, Timer, Twitter, ComputerIcon as Windows, X } from 'lucide-react'
+import { useEffect, useRef, useState } from "react"
 import TransparentWindowDemo from "./transparent-window-demo"
 
 // ============= TIPOS E INTERFACES =============

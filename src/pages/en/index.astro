@@ -1,29 +1,27 @@
 ---
-import Layout from "../../layouts/Layout.astro"
-import Badge from "../../components/Badge.astro"
-import GitHubIco from "../../components/icons/GitHubIco.astro"
-import SocialPill from "../../components/SocialPill.astro"
-import XIco from "../../components/icons/XIco.astro"
-import EmailIco from "../../components/icons/EmailIco.astro"
-import Experience from "../../components/Experience.astro"
-import Container from "../../components/Container.astro"
-import BriefcaseIco from "../../components/icons/BriefcaseIco.astro"
-import Footer from "../../components/Footer.astro"
-import PDFIco from "../../components/icons/PDFIco.astro"
 import AboutMe from "../../components/AboutMe.astro"
-import AboutMeIco from "../../components/icons/AboutMeIco.astro"
-import { getLangFromUrl, useTranslations } from "../../i18n/utils"
+import { AuraBannerEN } from "../../components/Aura-banner-EN"
+import Badge from "../../components/Badge.astro"
+import Container from "../../components/Container.astro"
+import Experience from "../../components/Experience.astro"
+import Footer from "../../components/Footer.astro"
 import ProjectsSection from "../../components/ProjectsSection"
+import SocialPill from "../../components/SocialPill.astro"
 import { PortfolioIntegration } from "../../components/TheWayComponent"
 import ProjectBannerEN from "../../components/eyep-banner-en"
-import { AuraBannerEN } from "../../components/Aura-banner-EN"
+import AboutMeIco from "../../components/icons/AboutMeIco.astro"
+import BriefcaseIco from "../../components/icons/BriefcaseIco.astro"
+import EmailIco from "../../components/icons/EmailIco.astro"
+import GitHubIco from "../../components/icons/GitHubIco.astro"
+import PDFIco from "../../components/icons/PDFIco.astro"
+import { getLangFromUrl, useTranslations } from "../../i18n/utils"
+import Layout from "../../layouts/Layout.astro"
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
 <Layout
-	client:load
 	title={t("site.title")}
 	description="Hire Mafifa to create your web or mobile application.Web developer, systems engineer, and founder of DASCA."
 >
@@ -67,14 +65,6 @@ const t = useTranslations(lang)
 					<GitHubIco class="size-5 md:size-6" />
 					GitHub
 				</SocialPill>
-				<!-- <SocialPill
-					target="_blank"
-					rel="nooperner noreferrer"
-					href="https://twitter.com/Mafifa_Charlys"
-				>
-					<XIco class="size-4 md:size-5" />
-					Twitter
-				</SocialPill> -->
 				<SocialPill
 					target="_blank"
 					rel="nooperner noreferrer"

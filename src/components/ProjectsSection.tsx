@@ -1,6 +1,6 @@
-import { useState, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Dialog, DialogTitle } from '@headlessui/react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useCallback, useState } from 'react'
 import { FaGithub, FaGlobe } from 'react-icons/fa'
 import { useTranslations } from '../i18n/utils'
 import ImageCarousel from './ImageCarousel'

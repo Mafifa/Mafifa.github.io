@@ -1,5 +1,5 @@
 import { useTranslations } from '../i18n/utils'
-import { ArrowRight, Clock, Eye, Monitor } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 type Lang = 'en' | 'fr' | 'es'
 

@@ -1,5 +1,3 @@
-
-
 import { ArrowRight, Clock, Eye, Monitor } from "lucide-react"
 
 interface ProjectBannerProps {

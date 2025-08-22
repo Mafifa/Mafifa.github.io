@@ -1,26 +1,25 @@
 import type React from "react"
 
-import { useState, useEffect, useRef } from "react"
 import {
-  Clock,
-  Download,
-  Coffee,
-  Brain,
-  MousePointer,
-  Monitor,
-  Timer,
-  Focus,
+  Apple,
   ArrowDown,
-  Menu,
-  X,
-  Github,
-  Twitter,
-  Instagram,
+  Brain,
   ChevronDown,
   ChevronUp,
+  Clock,
+  Coffee,
+  Download,
+  Focus,
+  Github,
+  Menu,
+  Monitor,
+  MousePointer,
+  Timer,
+  Twitter,
   ComputerIcon as Windows,
-  Apple,
+  X
 } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
 
 // ============= TYPES ET INTERFACES =============
 

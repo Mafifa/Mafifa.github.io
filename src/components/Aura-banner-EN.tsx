@@ -11,7 +11,7 @@ export function AuraBannerEN ({ projectUrl = "#" }: ProjectBannerProps) {
       <div className="flex-shrink-0 w-full md:w-[300px] h-[300px] bg-[#7e3b3b] rounded-xl flex items-center justify-center p-4">
         <div className="relative w-full h-full rounded-lg overflow-hidden flex items-center justify-center">
           <img
-            src="../../resources/aura-image.png"
+            src="/resources/aura-image.png"
             alt="Aura App Icon"
             width={200}
             height={200}

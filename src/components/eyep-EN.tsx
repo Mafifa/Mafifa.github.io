@@ -15,7 +15,6 @@ import {
   X,
   Github,
   Twitter,
-  Instagram,
   ChevronDown,
   ChevronUp,
   ComputerIcon as Windows,

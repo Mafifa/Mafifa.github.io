@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react"
 import { Monitor } from 'lucide-react'
+import { useEffect, useState } from "react"
 
 interface TransparentWindowDemoProps {
   language?: "es" | "en" | "fr"

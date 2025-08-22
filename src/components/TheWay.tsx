@@ -1,6 +1,4 @@
-'use client'
-
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 // Importa los iconos que necesitas
 // Si estás usando react-icons, puedes reemplazar estas importaciones
